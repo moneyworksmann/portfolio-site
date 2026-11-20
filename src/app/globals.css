@@ -24,8 +24,8 @@
   --t-linkedin: #c9b5ea; --t-linkedin-ink: #1f1630;
   --t-contact: #a7744f; --t-contact-ink: #ffffff;
 
-  --font-sans: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
   color-scheme: light;
 }
 
