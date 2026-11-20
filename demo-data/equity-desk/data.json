@@ -1,0 +1,2141 @@
+{
+ "asOf": "2026-11-19T18:13:37.287589+00:00",
+ "ticker": "MSFT",
+ "project": "equity-desk",
+ "version": "3.8.0",
+ "source": "cd <copy of equity-desk> && RESEARCH_DB=<scratch sqlite> .venv/bin/python main.py MSFT",
+ "executiveBrief": {
+  "company": {
+   "ticker": "MSFT",
+   "company_name": "Microsoft Corporation",
+   "sector": "Technology",
+   "industry": "Software - Infrastructure",
+   "current_price": 503.64,
+   "market_cap": 3740128772096.0
+  },
+  "preparedDate": "2026-11-19",
+  "researchPosture": "watchlist",
+  "evidenceConfidence": "low",
+  "underwritingStatus": "Industry valuation draft; issuer-specific thesis review required",
+  "centralQuestion": "Do company economics support the expectations embedded in the current price?",
+  "mdPmAnswer": "MSFT: review the software valuation framework, peer comparability and input gaps before forming a directional thesis.",
+  "quoteCurrency": "USD",
+  "latestFinancialPeriod": "2026-06-30",
+  "statementCompleteness": 1.0,
+  "thesisPillars": [
+   {
+    "title": "Operating results versus market expectations",
+    "claim": "Test whether reported growth, profitability and reinvestment support the assumptions implied by price.",
+    "evidence": [
+     "Top-line growth is improving; latest annual change was +17.8%.",
+     "Operating leverage is stable; latest annual change was +1.2%.",
+     "Discretionary cash generation is stable; latest annual change was -6.5%."
+    ],
+    "evidence_label": "model_derived",
+    "confidence": "low",
+    "financial_consequence": "Changes in earnings and cash generation change intrinsic value.",
+    "counterargument": "Historical performance may not persist; peer premiums can reflect material business differences.",
+    "disconfirming_signal": "New disclosures contradict model growth, margin or reinvestment assumptions."
+   },
+   {
+    "title": "Retention",
+    "claim": "Test issuer sensitivity to retention",
+    "evidence": [],
+    "evidence_label": "sector_hypothesis",
+    "confidence": "low",
+    "financial_consequence": "Revenue, profitability and capital requirements",
+    "counterargument": "The sector mechanism may not describe this issuer's actual exposure.",
+    "disconfirming_signal": "Issuer segment disclosures or operating indicators contradict the hypothesized sensitivity."
+   },
+   {
+    "title": "seats or consumption",
+    "claim": "Test issuer sensitivity to seats or consumption",
+    "evidence": [],
+    "evidence_label": "sector_hypothesis",
+    "confidence": "low",
+    "financial_consequence": "Revenue, profitability and capital requirements",
+    "counterargument": "The sector mechanism may not describe this issuer's actual exposure.",
+    "disconfirming_signal": "Issuer segment disclosures or operating indicators contradict the hypothesized sensitivity."
+   },
+   {
+    "title": "Price versus model assumptions",
+    "claim": "Compare price-implied assumptions with disclosed operating performance and eligible peers.",
+    "evidence": [
+     "DCF bear: value differs from price by over 50% downside or 100% upside. Check growth/margin assumptions, timing, reinvestment, share units and omitted businesses. Do not force-fit to price.",
+     "Peers ev_revenue: value differs from price by over 50% downside or 100% upside. Check growth/margin assumptions, timing, reinvestment, share units and omitted businesses. Do not force-fit to price.",
+     "The range is a cross-method envelope, not a recommended target or a confidence interval. Compare peer growth and margins before treating a premium as overvaluation.",
+     "Company revenue growth 17.8% versus eligible-peer median 13.5%; faster growth alone does not establish a justified premium.",
+     "Company operating margin 46.8% versus eligible-peer median 25.3%; accounting, business mix and reinvestment still require review."
+    ],
+    "evidence_label": "model_derived",
+    "confidence": "review_required",
+    "financial_consequence": "Growth, profitability, capital intensity and required returns affect equity value.",
+    "counterargument": "Peer dispersion and uncertain forecasts can produce a wide range; a price gap alone is not mispricing.",
+    "disconfirming_signal": "Required growth or returns lack support from subsequent disclosures."
+   }
+  ],
+  "keyDebates": [
+   {
+    "debate": "Retention",
+    "consensus_view": "Verified consensus unavailable",
+    "analyst_view": "Test issuer sensitivity to retention",
+    "evidence": [],
+    "what_changes_the_view": "New issuer disclosures for retention",
+    "next_catalyst": "2027-01-27"
+   },
+   {
+    "debate": "seats or consumption",
+    "consensus_view": "Verified consensus unavailable",
+    "analyst_view": "Test issuer sensitivity to seats or consumption",
+    "evidence": [],
+    "what_changes_the_view": "New issuer disclosures for seats or consumption",
+    "next_catalyst": "2027-01-27"
+   },
+   {
+    "debate": "pricing",
+    "consensus_view": "Verified consensus unavailable",
+    "analyst_view": "Test issuer sensitivity to pricing",
+    "evidence": [
+     "As we manage infrastructure capacity constraints and evolving customer demand, we may modify capacity allocations, deployment priorities, pricing, or other commercial arrangements."
+    ],
+    "what_changes_the_view": "New issuer disclosures for pricing",
+    "next_catalyst": "2027-01-27"
+   }
+  ]
+ },
+ "attention": {
+  "method": "5\u00d7impact + 3\u00d7urgency + 2\u00d7evidence; dimensions 1\u20135, maximum 50. Rule-based research priorities, not return probabilities.",
+  "limitations": [
+   "Scores are transparent heuristics, not validated predictive weights.",
+   "Evidence paths refer to the saved research snapshot; inspect original source dates there.",
+   "Ranking reflects available inputs, not proof that unobserved risks are absent."
+  ],
+  "findings": [
+   {
+    "rank": 1,
+    "topic": "valuation",
+    "headline": "Review what drives the valuation range",
+    "detail": "6 conditional model estimates are available; market price is context, not a calibration target.",
+    "score": 40,
+    "components": {
+     "impact": 5,
+     "urgency": 3,
+     "evidence": 3
+    },
+    "evidence_kind": "model_derived",
+    "next_action": "Compare bear/base/bull assumptions, peer eligibility and terminal-value dependence.",
+    "why_ranked": "Impact 5/5, urgency 3/5, evidence 3/5; score 40/50."
+   },
+   {
+    "rank": 2,
+    "topic": "financials",
+    "headline": "Revenue trend and its durability",
+    "detail": "Revenue changed 17.8% in period 2026-06-30; check segments and comparability.",
+    "score": 37,
+    "components": {
+     "impact": 4,
+     "urgency": 3,
+     "evidence": 4
+    },
+    "evidence_kind": "reported_calculation",
+    "next_action": "Review segment growth, margins and the prior-year base.",
+    "why_ranked": "Impact 4/5, urgency 3/5, evidence 4/5; score 37/50."
+   },
+   {
+    "rank": 3,
+    "topic": "risk",
+    "headline": "Risk coverage or interpretation caveat",
+    "detail": "Small 95% tail sample; VaR/CVaR can be unstable.",
+    "score": 32,
+    "components": {
+     "impact": 3,
+     "urgency": 3,
+     "evidence": 4
+    },
+    "evidence_kind": "coverage_caveat",
+    "next_action": "Read the sampling, model and sector limitations.",
+    "why_ranked": "Impact 3/5, urgency 3/5, evidence 4/5; score 32/50."
+   },
+   {
+    "rank": 4,
+    "topic": "news",
+    "headline": "Prepare for the next earnings catalyst",
+    "detail": "Provider-reported date: 2027-01-27; verify timing with investor relations.",
+    "score": 30,
+    "components": {
+     "impact": 4,
+     "urgency": 2,
+     "evidence": 2
+    },
+    "evidence_kind": "provider_event",
+    "next_action": "List which guidance, margins and cash-flow disclosures would change the thesis.",
+    "why_ranked": "Impact 4/5, urgency 2/5, evidence 2/5; score 30/50."
+   },
+   {
+    "rank": 5,
+    "topic": "risk",
+    "headline": "Price variability",
+    "detail": "Losses can exceed historical VaR during discontinuous events",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Drawdowns, event dates and realized volatility",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 6,
+    "topic": "risk",
+    "headline": "Short-term liquidity",
+    "detail": "Funding pressure if cash conversion deteriorates",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Cash, working capital and maturity disclosures",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 7,
+    "topic": "risk",
+    "headline": "supply_chain",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 8,
+    "topic": "risk",
+    "headline": "demand",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 9,
+    "topic": "risk",
+    "headline": "growth",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 10,
+    "topic": "risk",
+    "headline": "margins_profitability",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 11,
+    "topic": "risk",
+    "headline": "capex_investment",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 12,
+    "topic": "risk",
+    "headline": "liquidity_debt",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 13,
+    "topic": "risk",
+    "headline": "competition",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 14,
+    "topic": "risk",
+    "headline": "regulation",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 15,
+    "topic": "risk",
+    "headline": "supply_chain",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 16,
+    "topic": "risk",
+    "headline": "demand",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 17,
+    "topic": "risk",
+    "headline": "Debt servicing",
+    "detail": "Refinancing costs reduce equity cash flow",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Interest coverage, debt maturities, rates",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 18,
+    "topic": "risk",
+    "headline": "DCF bear divergence",
+    "detail": "Forecast shortfall or multiple compression",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Model inputs, peer dispersion and price-implied growth",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 19,
+    "topic": "risk",
+    "headline": "Peers ev_revenue divergence",
+    "detail": "Forecast shortfall or multiple compression",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Model inputs, peer dispersion and price-implied growth",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 20,
+    "topic": "risk",
+    "headline": "Demand and activity",
+    "detail": "Retention",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Changes in Demand and activity",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 21,
+    "topic": "risk",
+    "headline": "Financing conditions",
+    "detail": "Funding costs, discount rates and refinancing access",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Changes in Financing conditions",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 22,
+    "topic": "risk",
+    "headline": "Input costs and pricing",
+    "detail": "seats or consumption; pricing; hosting and development costs",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Changes in Input costs and pricing",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 23,
+    "topic": "risk",
+    "headline": "software policy exposure",
+    "detail": "Privacy, security and competition rules affect operations",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "['recurring revenue', 'retention', 'remaining obligations', 'SBC', 'sales efficiency']",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 24,
+    "topic": "risk",
+    "headline": "Cash generation",
+    "detail": "Persistent negative FCF may require financing",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "OCF versus capex, dilution and acquisitions",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 25,
+    "topic": "risk",
+    "headline": "growth",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 26,
+    "topic": "risk",
+    "headline": "margins_profitability",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 27,
+    "topic": "risk",
+    "headline": "capex_investment",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 28,
+    "topic": "risk",
+    "headline": "liquidity_debt",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 29,
+    "topic": "risk",
+    "headline": "competition",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   },
+   {
+    "rank": 30,
+    "topic": "risk",
+    "headline": "regulation",
+    "detail": "Issuer disclosure; magnitude and probability not quantified",
+    "score": 27,
+    "components": {
+     "impact": 3,
+     "urgency": 2,
+     "evidence": 3
+    },
+    "evidence_kind": "upstream_risk_assessment",
+    "next_action": "Check changes in subsequent filings",
+    "why_ranked": "Impact 3/5, urgency 2/5, evidence 3/5; score 27/50."
+   }
+  ]
+ },
+ "valuation": {
+  "framework": "software",
+  "methodology": "Industry-selected peer quartiles, audited FCFF scenarios, reverse DCF and sourced segment SOTP; methods remain separate",
+  "confidence": "review_required",
+  "quote": 503.64,
+  "rangeLow": 184.03169019859695,
+  "rangeHigh": 626.6153530171584,
+  "methodComparison": [
+   {
+    "method": "DCF bear",
+    "value_low": 195.18306092550384,
+    "value_base": 195.18306092550384,
+    "value_high": 195.18306092550384,
+    "basis": "intrinsic scenario",
+    "upside_downside": -0.6124552042619652,
+    "review_required": true
+   },
+   {
+    "method": "DCF base",
+    "value_low": 322.3245020018227,
+    "value_base": 322.3245020018227,
+    "value_high": 322.3245020018227,
+    "basis": "intrinsic scenario",
+    "upside_downside": -0.3600101223059672,
+    "review_required": false
+   },
+   {
+    "method": "DCF bull",
+    "value_low": 541.9667907482753,
+    "value_base": 541.9667907482753,
+    "value_high": 541.9667907482753,
+    "basis": "intrinsic scenario",
+    "upside_downside": 0.07609957657905508,
+    "review_required": false
+   },
+   {
+    "method": "Peers ev_revenue",
+    "value_low": 184.03169019859695,
+    "value_base": 251.4483594228633,
+    "value_high": 312.6916855973896,
+    "basis": "peer quartiles",
+    "upside_downside": -0.500737909175476,
+    "review_required": true
+   },
+   {
+    "method": "Peers ev_ebitda",
+    "value_low": 367.99155567564094,
+    "value_base": 458.9034645200223,
+    "value_high": 626.6153530171584,
+    "basis": "peer quartiles",
+    "upside_downside": -0.08882641466122176,
+    "review_required": false
+   },
+   {
+    "method": "Peers pe",
+    "value_low": 329.8593391774955,
+    "value_base": 368.7244725831083,
+    "value_high": 515.398498336402,
+    "basis": "peer quartiles",
+    "upside_downside": -0.26788088201273064,
+    "review_required": false
+   }
+  ],
+  "interpretation": [
+   "DCF bear: value differs from price by over 50% downside or 100% upside. Check growth/margin assumptions, timing, reinvestment, share units and omitted businesses. Do not force-fit to price.",
+   "Peers ev_revenue: value differs from price by over 50% downside or 100% upside. Check growth/margin assumptions, timing, reinvestment, share units and omitted businesses. Do not force-fit to price.",
+   "The range is a cross-method envelope, not a recommended target or a confidence interval. Compare peer growth and margins before treating a premium as overvaluation.",
+   "Company revenue growth 17.8% versus eligible-peer median 13.5%; faster growth alone does not establish a justified premium.",
+   "Company operating margin 46.8% versus eligible-peer median 25.3%; accounting, business mix and reinvestment still require review."
+  ],
+  "wacc": {
+   "risk_free_rate": 0.0425,
+   "equity_risk_premium": 0.05,
+   "beta": 1.045,
+   "cost_of_equity": 0.09475,
+   "pre_tax_cost_of_debt": 0.055,
+   "marginal_tax_rate": 0.21,
+   "market_value_equity": 3740128772096.0,
+   "market_value_debt": 133930999808.0,
+   "equity_weight": 0.965428772994337,
+   "debt_weight": 0.034571227005662945,
+   "wacc": 0.09297649605460949,
+   "sources": {
+    "rates": "explicit configuration or sourced ticker overrides; not auto-updated",
+    "beta": "provider or explicit 1.0 fallback",
+    "debt": "book debt proxy; not debt market quote"
+   }
+  },
+  "dcfScenarios": [
+   {
+    "name": "bear",
+    "implied_value_per_share": 195.18306092550384,
+    "upside_downside": -0.6124552042619652,
+    "wacc": 0.10297649605460948,
+    "terminal_growth_rate": 0.025,
+    "revenue_growth_start": 0.12788686799846666,
+    "revenue_growth_end": 0.055,
+    "target_ebit_margin": 0.37548320989481476
+   },
+   {
+    "name": "base",
+    "implied_value_per_share": 322.3245020018227,
+    "upside_downside": -0.3600101223059672,
+    "wacc": 0.09297649605460949,
+    "terminal_growth_rate": 0.025,
+    "revenue_growth_start": 0.17788686799846665,
+    "revenue_growth_end": 0.08,
+    "target_ebit_margin": 0.4054832098948148
+   },
+   {
+    "name": "bull",
+    "implied_value_per_share": 541.9667907482753,
+    "upside_downside": 0.07609957657905508,
+    "wacc": 0.0829764960546095,
+    "terminal_growth_rate": 0.025,
+    "revenue_growth_start": 0.22788686799846664,
+    "revenue_growth_end": 0.10500000000000001,
+    "target_ebit_margin": 0.4354832098948148
+   }
+  ],
+  "sensitivity": {
+   "wacc_values": [
+    0.07297649605460949,
+    0.0829764960546095,
+    0.09297649605460949,
+    0.10297649605460948,
+    0.1129764960546095
+   ],
+   "terminal_growth_values": [
+    0.015000000000000001,
+    0.02,
+    0.025,
+    0.030000000000000002,
+    0.035
+   ],
+   "implied_values_per_share": [
+    [
+     447.29907636481477,
+     448.92351726796835,
+     450.5479581711218,
+     452.17239907427535,
+     453.7968399774288
+    ],
+    [
+     375.374239988304,
+     376.6763377938653,
+     377.97843559942663,
+     379.2805334049878,
+     380.58263121054915
+    ],
+    [
+     320.2044934965091,
+     321.2644977491659,
+     322.3245020018227,
+     323.3845062544795,
+     324.4445105071363
+    ],
+    [
+     276.7952491694426,
+     277.66900144744454,
+     278.54275372544646,
+     279.4165060034485,
+     280.2902582814504
+    ],
+    [
+     241.93142098270178,
+     242.6591018891996,
+     243.38678279569734,
+     244.11446370219525,
+     244.84214460869302
+    ]
+   ]
+  },
+  "reverseDcf": {
+   "status": "solved",
+   "market_price": 503.64,
+   "implied_starting_growth": 0.29310275447695733,
+   "grid": [
+    {
+     "growth_start": -0.5,
+     "value_per_share": 12.232763269515686
+    },
+    {
+     "growth_start": -0.475,
+     "value_per_share": 14.288449174201762
+    },
+    {
+     "growth_start": -0.45,
+     "value_per_share": 16.598184934089318
+    },
+    {
+     "growth_start": -0.425,
+     "value_per_share": 19.192018062636116
+    },
+    {
+     "growth_start": -0.4,
+     "value_per_share": 22.102941569599324
+    },
+    {
+     "growth_start": -0.375,
+     "value_per_share": 25.36711758323552
+    },
+    {
+     "growth_start": -0.35,
+     "value_per_share": 29.024113358603763
+    },
+    {
+     "growth_start": -0.32499999999999996,
+     "value_per_share": 33.11715013443477
+    },
+    {
+     "growth_start": -0.3,
+     "value_per_share": 37.69336531120753
+    },
+    {
+     "growth_start": -0.275,
+     "value_per_share": 42.8040884333485
+    },
+    {
+     "growth_start": -0.25,
+     "value_per_share": 48.505131468840034
+    },
+    {
+     "growth_start": -0.22499999999999998,
+     "value_per_share": 54.85709388999187
+    },
+    {
+     "growth_start": -0.19999999999999996,
+     "value_per_share": 61.92568306969496
+    },
+    {
+     "growth_start": -0.175,
+     "value_per_share": 69.78205051813683
+    },
+    {
+     "growth_start": -0.14999999999999997,
+     "value_per_share": 78.50314449571718
+    },
+    {
+     "growth_start": -0.125,
+     "value_per_share": 88.17207954875487
+    },
+    {
+     "growth_start": -0.09999999999999998,
+     "value_per_share": 98.8785235255318
+    },
+    {
+     "growth_start": -0.07499999999999996,
+     "value_per_share": 110.71910264126386
+    },
+    {
+     "growth_start": -0.04999999999999999,
+     "value_per_share": 123.79782517173669
+    },
+    {
+     "growth_start": -0.024999999999999967,
+     "value_per_share": 138.2265243665838
+    },
+    {
+     "growth_start": 0.0,
+     "value_per_share": 154.12532118452353
+    },
+    {
+     "growth_start": 0.025000000000000022,
+     "value_per_share": 171.62310746430649
+    },
+    {
+     "growth_start": 0.050000000000000044,
+     "value_per_share": 190.85805015665483
+    },
+    {
+     "growth_start": 0.07500000000000007,
+     "value_per_share": 211.97811725410654
+    },
+    {
+     "growth_start": 0.10000000000000009,
+     "value_per_share": 235.14162606739973
+    },
+    {
+     "growth_start": 0.125,
+     "value_per_share": 260.5178145088547
+    },
+    {
+     "growth_start": 0.15000000000000002,
+     "value_per_share": 288.28743605513154
+    },
+    {
+     "growth_start": 0.17500000000000004,
+     "value_per_share": 318.64337907375324
+    },
+    {
+     "growth_start": 0.20000000000000007,
+     "value_per_share": 351.79131120989916
+    },
+    {
+     "growth_start": 0.2250000000000001,
+     "value_per_share": 387.9503495421803
+    },
+    {
+     "growth_start": 0.25,
+     "value_per_share": 427.35375722841405
+    },
+    {
+     "growth_start": 0.275,
+     "value_per_share": 470.2496673748195
+    },
+    {
+     "growth_start": 0.30000000000000004,
+     "value_per_share": 516.9018348745471
+    },
+    {
+     "growth_start": 0.32500000000000007,
+     "value_per_share": 567.590416974063
+    },
+    {
+     "growth_start": 0.3500000000000001,
+     "value_per_share": 622.6127833385868
+    },
+    {
+     "growth_start": 0.375,
+     "value_per_share": 682.2843564005867
+    },
+    {
+     "growth_start": 0.4,
+     "value_per_share": 746.9394827882002
+    },
+    {
+     "growth_start": 0.42500000000000004,
+     "value_per_share": 816.9323366434544
+    },
+    {
+     "growth_start": 0.45000000000000007,
+     "value_per_share": 892.637855653225
+    },
+    {
+     "growth_start": 0.4750000000000001,
+     "value_per_share": 974.4527106290432
+    },
+    {
+     "growth_start": 0.5,
+     "value_per_share": 1062.7963094851561
+    },
+    {
+     "growth_start": 0.5250000000000001,
+     "value_per_share": 1158.1118364775837
+    },
+    {
+     "growth_start": 0.55,
+     "value_per_share": 1260.867327580405
+    },
+    {
+     "growth_start": 0.575,
+     "value_per_share": 1371.5567828890705
+    },
+    {
+     "growth_start": 0.6000000000000001,
+     "value_per_share": 1490.7013169541656
+    },
+    {
+     "growth_start": 0.625,
+     "value_per_share": 1618.8503479628448
+    },
+    {
+     "growth_start": 0.6500000000000001,
+     "value_per_share": 1756.5828266989993
+    },
+    {
+     "growth_start": 0.675,
+     "value_per_share": 1904.5085062271305
+    },
+    {
+     "growth_start": 0.7000000000000002,
+     "value_per_share": 2063.2692532590268
+    },
+    {
+     "growth_start": 0.7250000000000001,
+     "value_per_share": 2233.540402176396
+    },
+    {
+     "growth_start": 0.75,
+     "value_per_share": 2416.0321526969133
+    },
+    {
+     "growth_start": 0.7750000000000001,
+     "value_per_share": 2611.491012185451
+    },
+    {
+     "growth_start": 0.8,
+     "value_per_share": 2820.701283626671
+    },
+    {
+     "growth_start": 0.8250000000000002,
+     "value_per_share": 3044.486600289759
+    },
+    {
+     "growth_start": 0.8500000000000001,
+     "value_per_share": 3283.711508130601
+    },
+    {
+     "growth_start": 0.875,
+     "value_per_share": 3539.28309699155
+    },
+    {
+     "growth_start": 0.9000000000000001,
+     "value_per_share": 3812.1526816736196
+    },
+    {
+     "growth_start": 0.925,
+     "value_per_share": 4103.317533970968
+    },
+    {
+     "growth_start": 0.9500000000000002,
+     "value_per_share": 4413.822666772506
+    },
+    {
+     "growth_start": 0.9750000000000001,
+     "value_per_share": 4744.762671350521
+    },
+    {
+     "growth_start": 1.0,
+     "value_per_share": 5097.2836089715465
+    }
+   ],
+   "interpretation": "Only starting revenue growth varies; all margins, reinvestment, WACC and fading rules fixed. This is one market-implied scenario, not a forecast or unique explanation."
+  },
+  "inputAudit": {
+   "price": 503.64,
+   "shares": 7426194552.0,
+   "cash": 64509001728.0,
+   "debt": 133930999808.0,
+   "other_claims": 0.0,
+   "market_cap_price_shares_ratio": 1.0000000395512387,
+   "current_to_annual_diluted_shares": 0.996403401583255,
+   "quote_currency": "USD",
+   "statement_currency": "USD",
+   "quote_timestamp": 1795112007,
+   "statement_period": "2026-06-30",
+   "sources": {
+    "shares": "current provider sharesOutstanding",
+    "cash": "provider totalCash or latest cash plus short-term investments",
+    "debt": "provider totalDebt or latest annual debt",
+    "other_claims": "sourced override or explicit unverified zero assumption"
+   },
+   "blocked": false,
+   "issues": [
+    "Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify."
+   ],
+   "analyst_inputs": {},
+   "fundamental_basis": "annual",
+   "availability": {
+    "dcf_status": "calculated",
+    "equity_cashflow_status": "not_needed",
+    "peer_status": "calculated",
+    "missing_dcf_inputs": [],
+    "integrity_blocked": false,
+    "next_step": "Review model assumptions and source dates."
+   }
+  },
+  "relativeValuationPeers": [
+   {
+    "ticker": "ORCL",
+    "price": 111.65,
+    "market_cap": 348092104704.0,
+    "multiples": {
+     "pe": 20.37175064879148,
+     "ev_revenue": 7.153188189735291,
+     "ev_ebitda": 16.114290866086957,
+     "price_book": 8.188860998774349,
+     "price_ffo": null
+    },
+    "flags": []
+   },
+   {
+    "ticker": "CRM",
+    "price": 186.415,
+    "market_cap": 153419546624.0,
+    "multiples": {
+     "pe": 20.573896339010325,
+     "ev_revenue": 4.519499076893438,
+     "ev_ebitda": 19.690714423250444,
+     "price_book": 2.5940878732542014,
+     "price_ffo": null
+    },
+    "flags": []
+   },
+   {
+    "ticker": "ADBE",
+    "price": 222.48,
+    "market_cap": 86589210624.0,
+    "multiples": {
+     "pe": 12.144350070126226,
+     "ev_revenue": 3.7520314682149016,
+     "ev_ebitda": 9.363926498110038,
+     "price_book": 7.449816398520174,
+     "price_ffo": null
+    },
+    "flags": []
+   },
+   {
+    "ticker": "NOW",
+    "price": 88.83,
+    "market_cap": 92198166528.0,
+    "multiples": {
+     "pe": 52.744946859267735,
+     "ev_revenue": 7.368045086308179,
+     "ev_ebitda": 38.18614467447307,
+     "price_book": 7.1118610853131745,
+     "price_ffo": null
+    },
+    "flags": []
+   }
+  ],
+  "assumptionsAndLimits": [
+   "DCF is an explicit conditional forecast, not a prediction calibrated to match the share price.",
+   "Provider quote and trailing fundamentals can have different update times; retrieval date is not a financial period.",
+   "All monetary inputs are full currency units. Current shares price the current equity claim; SBC remains an operating expense.",
+   "Peer quartiles measure observed dispersion, not a statistical confidence interval. No automatic target blend.",
+   "Industry templates select methods, not fixed valuation multiples; reviewed peers and segment inputs can be supplied per ticker."
+  ]
+ },
+ "scenarios": {
+  "valuation": [
+   {
+    "name": "bear",
+    "value_per_share": 195.18306092550384,
+    "return_to_price": -0.6124552042619652,
+    "wacc": 0.10297649605460948,
+    "target_margin": 0.37548320989481476,
+    "type": "conditional valuation scenario; no assigned probability"
+   },
+   {
+    "name": "base",
+    "value_per_share": 322.3245020018227,
+    "return_to_price": -0.3600101223059672,
+    "wacc": 0.09297649605460949,
+    "target_margin": 0.4054832098948148,
+    "type": "conditional valuation scenario; no assigned probability"
+   },
+   {
+    "name": "bull",
+    "value_per_share": 541.9667907482753,
+    "return_to_price": 0.07609957657905508,
+    "wacc": 0.0829764960546095,
+    "target_margin": 0.4354832098948148,
+    "type": "conditional valuation scenario; no assigned probability"
+   }
+  ],
+  "macro": [
+   {
+    "name": "supportive",
+    "probability": null,
+    "conditions": [
+     "Demand improves without offsetting cost or capital pressure"
+    ],
+    "company_readthrough": "Test higher volumes or fee income against observed capacity and capital requirements.",
+    "financial_channels": [
+     "Retention",
+     "seats or consumption",
+     "pricing",
+     "hosting and development costs"
+    ]
+   },
+   {
+    "name": "base",
+    "probability": null,
+    "conditions": [
+     "Operating conditions remain near the explicitly modelled assumptions"
+    ],
+    "company_readthrough": "Update inputs from issuer disclosures; this is a conditional scenario, not a consensus forecast.",
+    "financial_channels": [
+     "Retention",
+     "seats or consumption",
+     "pricing",
+     "hosting and development costs"
+    ]
+   },
+   {
+    "name": "adverse",
+    "probability": null,
+    "conditions": [
+     "Demand weakens or funding, input costs or policy become less favourable"
+    ],
+    "company_readthrough": "Test lower earnings, increased capital needs and reduced equity value.",
+    "financial_channels": [
+     "Retention",
+     "seats or consumption",
+     "pricing",
+     "hosting and development costs"
+    ]
+   }
+  ]
+ },
+ "swot": {
+  "status": "draft",
+  "strengths": [
+   {
+    "title": "Operating profitability",
+    "claim": "operating margin is 46.8% for 2026-06-30; this alone establishes neither durability nor peer superiority.",
+    "evidence_kind": "reported_calculation",
+    "evidence_paths": [
+     "deep_financials.annual_periods.4.ratios.operating_margin"
+    ],
+    "validation_question": "Is this recurring and competitive on a comparable accounting basis?",
+    "confidence": "moderate"
+   },
+   {
+    "title": "Net profitability",
+    "claim": "net margin is 40.3% for 2026-06-30; this alone establishes neither durability nor peer superiority.",
+    "evidence_kind": "reported_calculation",
+    "evidence_paths": [
+     "deep_financials.annual_periods.4.ratios.net_margin"
+    ],
+    "validation_question": "Is this recurring and competitive on a comparable accounting basis?",
+    "confidence": "moderate"
+   },
+   {
+    "title": "Cash generation after capital spending",
+    "claim": "Annual FCF is 66,987,000,000 USD; review working-capital timing and SBC.",
+    "evidence_kind": "reported_calculation",
+    "evidence_paths": [
+     "deep_financials.annual_periods.4.cash_flow_statement"
+    ],
+    "validation_question": "Does cash generation persist after normalized reinvestment and dilution?",
+    "confidence": "moderate"
+   }
+  ],
+  "weaknesses": [],
+  "opportunities": [
+   {
+    "title": "Potential improvement: Retention",
+    "claim": "Research hypothesis: Test issuer sensitivity to retention",
+    "evidence_kind": "sector_hypothesis",
+    "evidence_paths": [
+     "company_business.business_model_drivers.0"
+    ],
+    "validation_question": "What measurable improvement and issuer evidence would make this a real opportunity?",
+    "confidence": "low"
+   },
+   {
+    "title": "Potential improvement: seats or consumption",
+    "claim": "Research hypothesis: Test issuer sensitivity to seats or consumption",
+    "evidence_kind": "sector_hypothesis",
+    "evidence_paths": [
+     "company_business.business_model_drivers.1"
+    ],
+    "validation_question": "What measurable improvement and issuer evidence would make this a real opportunity?",
+    "confidence": "low"
+   },
+   {
+    "title": "Potential improvement: pricing",
+    "claim": "Research hypothesis: Test issuer sensitivity to pricing",
+    "evidence_kind": "sector_hypothesis",
+    "evidence_paths": [
+     "company_business.business_model_drivers.2"
+    ],
+    "validation_question": "What measurable improvement and issuer evidence would make this a real opportunity?",
+    "confidence": "low"
+   },
+   {
+    "title": "Potential improvement: hosting and development costs",
+    "claim": "Research hypothesis: Test issuer sensitivity to hosting and development costs",
+    "evidence_kind": "sector_hypothesis",
+    "evidence_paths": [
+     "company_business.business_model_drivers.3"
+    ],
+    "validation_question": "What measurable improvement and issuer evidence would make this a real opportunity?",
+    "confidence": "low"
+   }
+  ],
+  "threats": [
+   {
+    "title": "Demand and activity",
+    "claim": "Retention",
+    "evidence_kind": "sector_hypothesis",
+    "evidence_paths": [
+     "macro_regulatory.macro_exposures.0"
+    ],
+    "validation_question": "Verify issuer exposure, direction, magnitude and timing; this is not an established company advantage or threat.",
+    "confidence": "low"
+   },
+   {
+    "title": "Financing conditions",
+    "claim": "Funding costs, discount rates and refinancing access",
+    "evidence_kind": "sector_hypothesis",
+    "evidence_paths": [
+     "macro_regulatory.macro_exposures.1"
+    ],
+    "validation_question": "Verify issuer exposure, direction, magnitude and timing; this is not an established company advantage or threat.",
+    "confidence": "low"
+   },
+   {
+    "title": "Input costs and pricing",
+    "claim": "seats or consumption; pricing; hosting and development costs",
+    "evidence_kind": "sector_hypothesis",
+    "evidence_paths": [
+     "macro_regulatory.macro_exposures.2"
+    ],
+    "validation_question": "Verify issuer exposure, direction, magnitude and timing; this is not an established company advantage or threat.",
+    "confidence": "low"
+   },
+   {
+    "title": "software policy exposure",
+    "claim": "Privacy, security and competition rules affect operations",
+    "evidence_kind": "sector_hypothesis",
+    "evidence_paths": [
+     "macro_regulatory.regulatory_exposures.0"
+    ],
+    "validation_question": "Verify applicable jurisdiction, rule status and issuer-specific financial effect.",
+    "confidence": "low"
+   }
+  ],
+  "limitations": [
+   "Rule-based synthesis of the stored report; no independent new research.",
+   "Strengths/weaknesses describe internal observations; opportunities/threats are external or prospective hypotheses.",
+   "No SWOT quadrant is filled with invented company facts."
+  ]
+ },
+ "business": {
+  "description": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft 365 Copilot, and Windows Commercial on-premises and Office licensed on-premises. This segment also provides Microsoft 365 Consumer products and cloud services; LinkedIn, including talent solutions, marketing solutions, subscriptions, and sales solutions; Dynamics 365, a set of cloud-based applications; and on-premises ERP and CRM applications. Its Intelligent Cloud segment offers server products and cloud services; cloud and AI consumption-based services, GitHub cloud services, health and life sciences cloud services, as well as virtual desktop offerings, and other cloud services; SQL Server, Windows Server, Visual Studio, System Center, and related client access licenses; and enterprise support services, industry solutions, Microsoft partner network, and learning experience. The company's More Personal Computing segment provides Windows OEM licensing and devices comprising Surface and PC accessories; XBOX hardware, and XBOX first- and third-party content and services; XBOX Game Pass and other subscriptions; XBOX Cloud Gaming, advertising, and other cloud services; and search advertising consisting of Bing, Copilot, Microsoft News, Microsoft Edge, and third-party affiliates. It sells its products through partners and retail networks. The company was founded in 1975 and is headquartered in Redmond, Washington.",
+  "revenue_model": [
+   "Sector framework to verify: Subscriptions, licences and related services"
+  ],
+  "capital_allocation": [
+   "Latest annual share repurchases: 22,271,000,000.",
+   "Latest annual debt repayment: 3,000,000,000.",
+   "Latest annual capital expenditures: 115,948,000,000."
+  ],
+  "segments": [
+   {
+    "segment": "Productivity And Business Processes",
+    "revenue": 139996000000.0,
+    "revenue_share": 0.4218792848339104,
+    "growth": 0.15881135667577184,
+    "economics": "Reported segment revenue; profitability and capital intensity require issuer-specific segment disclosure.",
+    "end_markets": []
+   },
+   {
+    "segment": "Intelligent Cloud",
+    "revenue": 137791000000.0,
+    "revenue_share": 0.41523449624667386,
+    "growth": 0.29667341081259124,
+    "economics": "Reported segment revenue; profitability and capital intensity require issuer-specific segment disclosure.",
+    "end_markets": []
+   },
+   {
+    "segment": "More Personal Computing",
+    "revenue": 54052000000.0,
+    "revenue_share": 0.16288621891941574,
+    "growth": -0.01092426210909625,
+    "economics": "Reported segment revenue; profitability and capital intensity require issuer-specific segment disclosure.",
+    "end_markets": []
+   }
+  ],
+  "conclusions": [
+   "Industry framework: software. Sector economics are hypotheses until confirmed in issuer disclosures.",
+   "Reported segment mix, growth and capital allocation are shown separately from sector assumptions.",
+   "No competitive strength or geographic concentration is inferred solely from the industry label."
+  ],
+  "industryConclusions": [
+   "Revenue multiples need growth/margin context. Keep stock compensation in operating expenses; do not add it back to FCFF.",
+   "4 of 4 candidates match the reported subsector; at least three observations are required for each percentile."
+  ],
+  "peers": [
+   "ORCL",
+   "CRM",
+   "ADBE",
+   "NOW"
+  ]
+ },
+ "risks": {
+  "annualizedVolatility": 0.3392080048959997,
+  "maxDrawdown1y": -0.27970152184609687,
+  "beta": 1.045,
+  "flags": [
+   "Small 95% tail sample; VaR/CVaR can be unstable."
+  ],
+  "register": [
+   {
+    "category": "market",
+    "risk": "Price variability",
+    "severity": "moderate",
+    "evidence": "Annualized volatility 33.9%; observed maximum drawdown -28.0%",
+    "downside_channel": "Losses can exceed historical VaR during discontinuous events",
+    "what_to_watch": "Drawdowns, event dates and realized volatility"
+   },
+   {
+    "category": "liquidity",
+    "risk": "Short-term liquidity",
+    "severity": "moderate",
+    "evidence": "Current ratio 1.23 as of 2026-06-30",
+    "downside_channel": "Funding pressure if cash conversion deteriorates",
+    "what_to_watch": "Cash, working capital and maturity disclosures"
+   },
+   {
+    "category": "leverage",
+    "risk": "Debt servicing",
+    "severity": "moderate",
+    "evidence": "Net debt / annual EBITDA -0.18x",
+    "downside_channel": "Refinancing costs reduce equity cash flow",
+    "what_to_watch": "Interest coverage, debt maturities, rates"
+   },
+   {
+    "category": "cash flow",
+    "risk": "Cash generation",
+    "severity": "moderate",
+    "evidence": "Annual FCF 66,987,000,000 USD",
+    "downside_channel": "Persistent negative FCF may require financing",
+    "what_to_watch": "OCF versus capex, dilution and acquisitions"
+   },
+   {
+    "category": "filing",
+    "risk": "growth",
+    "severity": "unscored",
+    "evidence": [
+     "Failure to do so could reduce adoption, market share, and revenue growth.",
+     "Microsoft 365 Commercial revenue is mainly affected by a combination of continued installed base growth and average revenue per user expansion, as well as the continued shift from Office licensed on-premises to Microsoft 365.",
+     "If we are not effective in executing organizational and technical changes to increase efficiency and accelerate innovation, or if we fail to generate sufficient usage of our new products and services, the timing or magnitude of any revenue growth may not be in line with these costs."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "margins_profitability",
+    "severity": "unscored",
+    "evidence": [
+     "Efforts to compete with competitors' content and application marketplaces may increase our cost of revenue and lower our operating margins.",
+     "Competing with operating systems licensed at low or no cost may decrease our PC operating system margins.",
+     "The cost of these measures to protect products and customer-facing services could reduce our operating margins."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "capex_investment",
+    "severity": "unscored",
+    "evidence": [
+     "These investments are being made at significant scale and on an accelerated timeline, require substantial and increasing capital expenditures and continued access to capital, and are in advance of fully developed revenue streams.",
+     "Intellectual Property We protect our intellectual property investments in a variety of ways.",
+     "Expanding manufacturing or supply capacity for certain components may require significant investments and multi-year lead times."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "liquidity_debt",
+    "severity": "unscored",
+    "evidence": [
+     "Our ability to fund these investments depends on our ability to generate sufficient cash flows and obtain financing on acceptable terms.",
+     "RIS K FACTORS Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "competition",
+    "severity": "unscored",
+    "evidence": [
+     "AI technology and services are a highly competitive and rapidly evolving market, and new competitors continue to enter the market.",
+     "STRATEGIC AND COMPETITIVE RISKS We face intense competition across all markets for our products and services, which could adversely affect our results of operations.",
+     "Competition Competitors to Office include software and global application vendors, web-based and mobile application companies, AI-first application companies, as well as local application developers."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "regulation",
+    "severity": "unscored",
+    "evidence": [
+     "Changes in governmental policies, permitting processes, environmental regulations, sustainability requirements, building standards, energy regulations, or other factors beyond our control may delay projects, restrict development opportunities, impose additional compliance obligations, or increase costs.",
+     "GOVERNMENT REGULATION We are subject to a wide range of laws, regulations, and legal requirements in the U.S.",
+     "Our business teams, with legal support, manage the compliance programs and prepare external regulatory and commercial reporting, and our internal audit teams conduct reviews of the programs and processes."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "supply_chain",
+    "severity": "unscored",
+    "evidence": [
+     "Component shortages, excess or obsolete inventory, or price reductions resulting in inventory adjustments have and may increase our cost of revenue.",
+     "Malicious actors have and may continue to exploit the supply chain to compromise our systems by, for example, injecting malware, including through software updates or compromised supplier or open-source software code, accounts, or hardware.",
+     "Incidents involving the supply chain, including third-party vendors, suppliers, service providers, open-source software, or customer environments, may adversely affect our systems and our products and services, even where our own systems are not directly compromised."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "demand",
+    "severity": "unscored",
+    "evidence": [
+     "As we manage infrastructure capacity constraints and evolving customer demand, we may modify capacity allocations, deployment priorities, pricing, or other commercial arrangements.",
+     "If we are unable to secure adequate power resources on commercially reasonable terms, our ability to support customer demand and execute our growth strategy could be adversely affected.",
+     "Our cloud and AI strategy requires substantial investments and depends on evolving customer demand, technological developments, competitive dynamics, and regulatory conditions, any of which could adversely affect our business, financial condition, and results of operations."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "growth",
+    "severity": "unscored",
+    "evidence": [
+     "Failure to do so could reduce adoption, market share, and revenue growth.",
+     "If we are not effective in executing organizational and technical changes to increase efficiency and accelerate innovation, or if we fail to generate sufficient usage of our new products and services, the timing or magnitude of any revenue growth may not be in line with these costs.",
+     "Efforts to compete with competitors' content and application marketplaces may increase our cost of revenue and lower our operating margins."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "margins_profitability",
+    "severity": "unscored",
+    "evidence": [
+     "The primary profitability measure used by the CODM to review segment operating results is operating income.",
+     "Efforts to compete with competitors' content and application marketplaces may increase our cost of revenue and lower our operating margins.",
+     "Cost of revenue is allocated in certain cases based on a relative revenue methodology."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "capex_investment",
+    "severity": "unscored",
+    "evidence": [
+     "These investments are being made at significant scale and on an accelerated timeline, require substantial and increasing capital expenditures and continued access to capital, and are in advance of fully developed revenue streams.",
+     "The fair values of these investments approximate their carrying values.",
+     "Our Level 2 investments include commercial paper, certificates of deposit, U.S."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "liquidity_debt",
+    "severity": "unscored",
+    "evidence": [
+     "15 PART I Item 1 Foreign currency risks related to certain Euro-denominated debt are hedged using foreign exchange forward contracts that are designated as cash flow hedging instruments.",
+     "Credit-Risk-Related Contingent Features Certain counterparty agreements for derivative instruments contain provisions that require our issued and outstanding long-term unsecured debt to maintain an investment grade credit rating and require us to maintain minimum liquidity of $ 1.0 billion.",
+     "Interest is paid semi-annually, except for the Euro-denominated debt, which is paid annually."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "competition",
+    "severity": "unscored",
+    "evidence": [
+     "Some jurisdictions also allow competitors or consumers to assert claims of anti-competitive conduct.",
+     "AI technology and services are a highly competitive and rapidly evolving market, and new competitors continue to enter the market.",
+     "STRATEGIC AND COMPETITIVE RISKS We face intense competition across all markets for our products and services, which could adversely affect our results of operations."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "regulation",
+    "severity": "unscored",
+    "evidence": [
+     "Changes in governmental policies, permitting processes, environmental regulations, sustainability requirements, building standards, energy regulations, or other factors beyond our control may delay projects, restrict development opportunities, impose additional compliance obligations, or increase costs.",
+     "Examples include laws and regulations regarding: \u2022 Competition laws and new market regulation: Government agencies closely scrutinize us under U.S.",
+     "Governments are actively enforcing competition laws and regulations and enacting new regulations to intervene in digital markets, and this includes markets such as the EU, the United Kingdom, the U.S., and China."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "supply_chain",
+    "severity": "unscored",
+    "evidence": [
+     "Component shortages, excess or obsolete inventory, or price reductions resulting in inventory adjustments have and may increase our cost of revenue.",
+     "Malicious actors have and may continue to exploit the supply chain to compromise our systems by, for example, injecting malware, including through software updates or compromised supplier or open-source software code, accounts, or hardware.",
+     "Incidents involving the supply chain, including third-party vendors, suppliers, service providers, open-source software, or customer environments, may adversely affect our systems and our products and services, even where our own systems are not directly compromised."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "filing",
+    "risk": "demand",
+    "severity": "unscored",
+    "evidence": [
+     "As we manage infrastructure capacity constraints and evolving customer demand, we may modify capacity allocations, deployment priorities, pricing, or other commercial arrangements.",
+     "If we are unable to secure adequate power resources on commercially reasonable terms, our ability to support customer demand and execute our growth strategy could be adversely affected.",
+     "Our cloud and AI strategy requires substantial investments and depends on evolving customer demand, technological developments, competitive dynamics, and regulatory conditions, any of which could adversely affect our business, financial condition, and results of operations."
+    ],
+    "downside_channel": "Issuer disclosure; magnitude and probability not quantified",
+    "what_to_watch": "Check changes in subsequent filings"
+   },
+   {
+    "category": "valuation",
+    "risk": "DCF bear divergence",
+    "severity": "review",
+    "evidence": {
+     "method": "DCF bear",
+     "value_low": 195.18306092550384,
+     "value_base": 195.18306092550384,
+     "value_high": 195.18306092550384,
+     "basis": "intrinsic scenario",
+     "upside_downside": -0.6124552042619652,
+     "review_required": true
+    },
+    "downside_channel": "Forecast shortfall or multiple compression",
+    "what_to_watch": "Model inputs, peer dispersion and price-implied growth"
+   },
+   {
+    "category": "valuation",
+    "risk": "Peers ev_revenue divergence",
+    "severity": "review",
+    "evidence": {
+     "method": "Peers ev_revenue",
+     "value_low": 184.03169019859695,
+     "value_base": 251.4483594228633,
+     "value_high": 312.6916855973896,
+     "basis": "peer quartiles",
+     "upside_downside": -0.500737909175476,
+     "review_required": true
+    },
+    "downside_channel": "Forecast shortfall or multiple compression",
+    "what_to_watch": "Model inputs, peer dispersion and price-implied growth"
+   },
+   {
+    "category": "macro",
+    "risk": "Demand and activity",
+    "severity": "unscored",
+    "evidence": [
+     "As we manage infrastructure capacity constraints and evolving customer demand, we may modify capacity allocations, deployment priorities, pricing, or other commercial arrangements.",
+     "If we are unable to secure adequate power resources on commercially reasonable terms, our ability to support customer demand and execute our growth strategy could be adversely affected.",
+     "Our cloud and AI strategy requires substantial investments and depends on evolving customer demand, technological developments, competitive dynamics, and regulatory conditions, any of which could adversely affect our business, financial condition, and results of operations."
+    ],
+    "downside_channel": "Retention",
+    "what_to_watch": "Changes in Demand and activity"
+   },
+   {
+    "category": "macro",
+    "risk": "Financing conditions",
+    "severity": "unscored",
+    "evidence": [
+     "Our ability to fund these investments depends on our ability to generate sufficient cash flows and obtain financing on acceptable terms."
+    ],
+    "downside_channel": "Funding costs, discount rates and refinancing access",
+    "what_to_watch": "Changes in Financing conditions"
+   },
+   {
+    "category": "macro",
+    "risk": "Input costs and pricing",
+    "severity": "unscored",
+    "evidence": [
+     "Local industry hypothesis; issuer evidence unavailable"
+    ],
+    "downside_channel": "seats or consumption; pricing; hosting and development costs",
+    "what_to_watch": "Changes in Input costs and pricing"
+   },
+   {
+    "category": "regulatory",
+    "risk": "software policy exposure",
+    "severity": "unscored",
+    "evidence": [
+     "Changes in governmental policies, permitting processes, environmental regulations, sustainability requirements, building standards, energy regulations, or other factors beyond our control may delay projects, restrict development opportunities, impose additional compliance obligations, or increase costs.",
+     "GOVERNMENT REGULATION We are subject to a wide range of laws, regulations, and legal requirements in the U.S.",
+     "Our business teams, with legal support, manage the compliance programs and prepare external regulatory and commercial reporting, and our internal audit teams conduct reviews of the programs and processes."
+    ],
+    "downside_channel": "Privacy, security and competition rules affect operations",
+    "what_to_watch": [
+     "recurring revenue",
+     "retention",
+     "remaining obligations",
+     "SBC",
+     "sales efficiency"
+    ]
+   }
+  ],
+  "falsifiers": [
+   "New disclosures contradict model growth, margin or reinvestment assumptions.",
+   "Issuer segment disclosures or operating indicators contradict the hypothesized sensitivity.",
+   "Issuer segment disclosures or operating indicators contradict the hypothesized sensitivity.",
+   "Required growth or returns lack support from subsequent disclosures."
+  ],
+  "nextEarnings": "2027-01-27",
+  "news": {
+   "coverage": {
+    "source": "Yahoo news metadata; linked articles not fetched",
+    "retrieved_at": "2026-11-19T18:13:29.419179+00:00",
+    "requested": 40,
+    "returned": 0,
+    "unique": 0,
+    "duplicates_removed": 0,
+    "undated": 0,
+    "older_than_7_days": 0
+   },
+   "items": [],
+   "upcomingEvents": [
+    {
+     "event": "Next earnings",
+     "date": "2027-01-27",
+     "source": "Earnings provider calendar; schedule subject to change",
+     "upside_test": "Growth, margins or guidance exceed the expectations used in valuation",
+     "downside_test": "Guidance cuts, margin pressure or cash-flow deterioration",
+     "model_inputs_to_review": [
+      "revenue growth",
+      "operating margin",
+      "reinvestment",
+      "share count"
+     ],
+     "date_status": "provider date; verify issuer calendar"
+    }
+   ]
+  }
+ },
+ "financialExhibits": {
+  "currency": "USD",
+  "annual": {
+   "columns": [
+    "fiscalYear",
+    "periodEnd",
+    "revenue",
+    "revenueGrowth",
+    "grossMargin",
+    "operatingMargin",
+    "dilutedEps",
+    "operatingCashFlow",
+    "capex",
+    "freeCashFlow"
+   ],
+   "rows": [
+    [
+     2022,
+     "2022-06-30",
+     198270000000.0,
+     null,
+     0.684016744842891,
+     0.4205527815604983,
+     9.65,
+     89035000000.0,
+     23886000000.0,
+     65149000000.0
+    ],
+    [
+     2023,
+     "2023-06-30",
+     211915000000.0,
+     0.06882029555656421,
+     0.6892008588349102,
+     0.417728806361041,
+     9.68,
+     87582000000.0,
+     28107000000.0,
+     59475000000.0
+    ],
+    [
+     2024,
+     "2024-06-30",
+     245122000000.0,
+     0.1566996201307127,
+     0.6976444382797138,
+     0.44644299573273716,
+     11.8,
+     118548000000.0,
+     44477000000.0,
+     74071000000.0
+    ],
+    [
+     2025,
+     "2025-06-30",
+     281724000000.0,
+     0.14932156232406713,
+     0.6882374238616519,
+     0.4562195624085985,
+     13.64,
+     136162000000.0,
+     64551000000.0,
+     71611000000.0
+    ],
+    [
+     2026,
+     "2026-06-30",
+     331839000000.0,
+     0.17788686799846665,
+     0.6794409337058032,
+     0.4678081840892722,
+     17.95,
+     182935000000.0,
+     115948000000.0,
+     66987000000.0
+    ]
+   ]
+  },
+  "balanceSheetLatest": {
+   "cash": 20935000000.0,
+   "total_assets": 758376000000.0,
+   "total_debt": 40294000000.0,
+   "stockholders_equity": 442387000000.0,
+   "working_capital": 38885000000.0,
+   "current_ratio": 1.2303272619576484,
+   "quick_ratio": 0.9342159040426478,
+   "debt_to_equity": 0.09108314665666034,
+   "net_debt": -36549000000.0
+  },
+  "cashFlowLatest": {
+   "operating_cash_flow": 182935000000.0,
+   "capital_expenditures": 115948000000.0,
+   "free_cash_flow": 66987000000.0,
+   "share_repurchases": 22271000000.0,
+   "debt_repaid": 3000000000.0,
+   "debt_issued": 0.0,
+   "dividends_paid": 26445000000.0
+  },
+  "trends": [
+   "Top-line growth is improving; latest annual change was +17.8%.",
+   "Gross profitability is stable; latest annual change was -0.9%.",
+   "R&d intensity is stable; latest annual change was -0.8%.",
+   "Operating leverage is stable; latest annual change was +1.2%.",
+   "Net profitability is improving; latest annual change was +4.2%.",
+   "Per-share earnings is improving; latest annual change was +31.6%.",
+   "Cash generation is improving; latest annual change was +34.4%.",
+   "Capital investment is rising; latest annual change was +79.6%.",
+   "Discretionary cash generation is stable; latest annual change was -6.5%.",
+   "Working-capital capacity is worsening; latest annual change was -22.1%.",
+   "Near-term liquidity is stable; latest annual change was -12.3%.",
+   "Balance-sheet leverage is stable; latest annual change was -1.7%.",
+   "Absolute debt is stable; latest annual change was -6.6%.",
+   "Share repurchases is stable; latest annual change was +20.9%."
+  ]
+ },
+ "sourcesLimitations": {
+  "sourceRegister": [
+   "SEC Company Facts primary + yfinance gap-fill",
+   "Provider market metadata",
+   "Linked news metadata"
+  ],
+  "openQuestions": [
+   "Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify.",
+   "Validate sector hypotheses against issuer disclosures and independently reviewed peers.",
+   "Industry routing is a research framework, not verified issuer economics. International symbols depend on provider coverage; no implicit FX or ADR conversion.",
+   "No issuer moat, market share or competitor strength is asserted without supporting evidence.",
+   "Cross-currency size ranks withheld; ratios use the labelled annual or provider basis and require period comparability review."
+  ],
+  "dataAudit": {
+   "status": "review_required",
+   "completeness_score": 1.0,
+   "periods_available": 5,
+   "source_priority": [
+    "SEC Company Facts (audited filing facts)",
+    "SEC inline-XBRL 10-K (audited filing facts)",
+    "versioned audited local snapshot",
+    "yfinance (provider-standardized gap-fill)",
+    "derived calculations"
+   ],
+   "validation_checks": {
+    "gross_profit_bridge": true,
+    "fcf_bridge": true,
+    "working_capital_bridge": true,
+    "current_ratio_bridge": true
+   },
+   "missing_required_fields": [],
+   "diagnostics": [
+    "SEC Company Facts was prioritized; yfinance filled only missing audited cells.",
+    "33 overlapping provider conflict(s) were resolved in favor of audited facts.",
+    "33 cross-source conflict(s) require review; audited SEC values were retained."
+   ]
+  },
+  "systemDiagnostics": {
+   "overall_status": "degraded",
+   "healthy_agents": 14,
+   "degraded_agents": 7,
+   "failed_agents": 0,
+   "next_actions": [],
+   "agents": [
+    {
+     "agent": "Financials",
+     "status": "ok",
+     "summary": "3/3 core values available.",
+     "issues": []
+    },
+    {
+     "agent": "Deep Financials",
+     "status": "ok",
+     "summary": "5 normalized annual period(s).",
+     "issues": [
+      "SEC Company Facts was prioritized; yfinance filled only missing audited cells.",
+      "33 overlapping provider conflict(s) were resolved in favor of audited facts."
+     ]
+    },
+    {
+     "agent": "Financial Data Reliability",
+     "status": "degraded",
+     "summary": "review_required; completeness 100.0%.",
+     "issues": [
+      "SEC Company Facts was prioritized; yfinance filled only missing audited cells.",
+      "33 overlapping provider conflict(s) were resolved in favor of audited facts.",
+      "33 cross-source conflict(s) require review; audited SEC values were retained."
+     ]
+    },
+    {
+     "agent": "Valuation",
+     "status": "ok",
+     "summary": "4/4 headline multiples available.",
+     "issues": []
+    },
+    {
+     "agent": "Advanced Valuation",
+     "status": "degraded",
+     "summary": "3 FCFF scenario(s); equity cash-flow model not_needed; valuation range available.",
+     "issues": [
+      "Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify.",
+      "No mechanical blend of unlike methods. Industry peer sample is not the entire industry."
+     ]
+    },
+    {
+     "agent": "Industry / Competition",
+     "status": "ok",
+     "summary": "4 peers and 4 competitive dimensions.",
+     "issues": [
+      "Industry routing is a research framework, not verified issuer economics. International symbols depend on provider coverage; no implicit FX or ADR conversion.",
+      "No issuer moat, market share or competitor strength is asserted without supporting evidence.",
+      "Cross-currency size ranks withheld; ratios use the labelled annual or provider basis and require period comparability review."
+     ]
+    },
+    {
+     "agent": "Macro / Regulatory",
+     "status": "ok",
+     "summary": "3 macro and 1 regulatory exposures.",
+     "issues": [
+      "Sector transmission hypotheses; no live macro series or verified policy update is implied.",
+      "Geographic exposures are not inferred from ticker or exchange."
+     ]
+    },
+    {
+     "agent": "Company / Business",
+     "status": "ok",
+     "summary": "4 operating drivers and 3 reported segments.",
+     "issues": []
+    },
+    {
+     "agent": "Risk",
+     "status": "ok",
+     "summary": "3/3 market-risk values available.",
+     "issues": [
+      "Small 95% tail sample; VaR/CVaR can be unstable."
+     ]
+    },
+    {
+     "agent": "SEC Filings",
+     "status": "ok",
+     "summary": "CIK 0000789019; 3 latest-form records; 16 evidence themes.",
+     "issues": [
+      "10-K records found: 2",
+      "10-Q records found: 2",
+      "8-K records found: 1",
+      "Body filings parsed with evidence: 4/4"
+     ]
+    },
+    {
+     "agent": "Filing Changes",
+     "status": "ok",
+     "summary": "2 filing comparison(s).",
+     "issues": []
+    },
+    {
+     "agent": "Earnings",
+     "status": "ok",
+     "summary": "8 earnings event(s).",
+     "issues": []
+    },
+    {
+     "agent": "News / Catalysts",
+     "status": "degraded",
+     "summary": "0 news item(s); 0 catalyst term(s).",
+     "issues": [
+      "News unavailable: YFDataException"
+     ]
+    },
+    {
+     "agent": "Investment Thesis",
+     "status": "degraded",
+     "summary": "4 pillars; posture watchlist.",
+     "issues": [
+      "Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify.",
+      "Validate sector hypotheses against issuer disclosures and independently reviewed peers.",
+      "Industry routing is a research framework, not verified issuer economics. International symbols depend on provider coverage; no implicit FX or ADR conversion.",
+      "No issuer moat, market share or competitor strength is asserted without supporting evidence.",
+      "Cross-currency size ranks withheld; ratios use the labelled annual or provider basis and require period comparability review."
+     ]
+    },
+    {
+     "agent": "Insight Priority",
+     "status": "ok",
+     "summary": "ready",
+     "issues": []
+    },
+    {
+     "agent": "SWOT Analysis",
+     "status": "degraded",
+     "summary": "draft",
+     "issues": []
+    },
+    {
+     "agent": "Dashboard Experience",
+     "status": "ok",
+     "summary": "ready",
+     "issues": []
+    },
+    {
+     "agent": "Portfolio & Position Tracking",
+     "status": "degraded",
+     "summary": "empty",
+     "issues": []
+    },
+    {
+     "agent": "Catalyst/Event Scheduler & Alerts",
+     "status": "ok",
+     "summary": "2 stored events; local inbox",
+     "issues": []
+    },
+    {
+     "agent": "Persistent Research Memory",
+     "status": "ok",
+     "summary": "Snapshot persisted to SQLite",
+     "issues": []
+    },
+    {
+     "agent": "Quantitative Portfolio Risk",
+     "status": "degraded",
+     "summary": "not_run",
+     "issues": []
+    }
+   ]
+  },
+  "finalReport": {
+   "ticker": "MSFT",
+   "generated_at": "2026-11-19T18:13:37.287589+00:00",
+   "report_version": "3.8.0",
+   "section_count": 25,
+   "readiness": "preliminary",
+   "warnings": [
+    "Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify.",
+    "Validate sector hypotheses against issuer disclosures and independently reviewed peers.",
+    "Industry routing is a research framework, not verified issuer economics. International symbols depend on provider coverage; no implicit FX or ADR conversion.",
+    "No issuer moat, market share or competitor strength is asserted without supporting evidence.",
+    "Cross-currency size ranks withheld; ratios use the labelled annual or provider basis and require period comparability review.",
+    "SEC Company Facts was prioritized; yfinance filled only missing audited cells.",
+    "33 overlapping provider conflict(s) were resolved in favor of audited facts.",
+    "33 cross-source conflict(s) require review; audited SEC values were retained.",
+    "Sector transmission hypotheses; no live macro series or verified policy update is implied.",
+    "Geographic exposures are not inferred from ticker or exchange."
+   ]
+  }
+ },
+ "reportSections": [
+  {
+   "title": "Executive Research View",
+   "chars": 4199,
+   "markdown": "## Executive Research View\n- Research posture: **WATCHLIST**\n- Underwriting status: Industry valuation draft; issuer-specific thesis review required\n- Evidence confidence: low\n- Valuation range: $184.03 to $626.62\n- Valuation basis: Industry-selected peer quartiles, audited FCFF scenarios, reverse DCF and sourced segment SOTP; methods remain separate\n\nMSFT: review the software valuation framework, peer comparability and input gaps before forming a directional thesis.\n\n**Central question:** Do company economics support the expectations embedded in the current price?\n\n**Variant perception:** No verified consensus comparison is available; market-implied scenarios are shown in valuation.\n\n### Thesis Pillars\n#### Operating results versus market expectations\n- Claim: Test whether reported growth, profitability and reinvestment support the assumptions implied by price.\n- Financial consequence: Changes in earnings and cash generation change intrinsic value.\n- Counterargument: Historical performance may not persist; peer premiums can reflect material business differences.\n- Disconfirming signal: New disclosures contradict model growth, margin or reinvestment assumptions.\n- Evidence label/confidence: model_derived / low\n- Evidence: Top-line growth is improving; latest annual change was +17.8%.\n- Evidence: Operating leverage is stable; latest annual change was +1.2%.\n- Evidence: Discretionary cash generation is stable; latest annual change was -6.5%.\n#### Retention\n- Claim: Test issuer sensitivity to retention\n- Financial consequence: Revenue, profitability and capital requirements\n- Counterargument: The sector mechanism may not describe this issuer's actual exposure.\n- Disconfirming signal: Issuer segment disclosures or operating indicators contradict the hypothesized sensitivity.\n- Evidence label/confidence: sector_hypothesis / low\n#### seats or consumption\n- Claim: Test issuer sensitivity to seats or consumption\n- Financial consequence: Revenue, profitability and capital requirements\n- Counterargument: The sector mechanism may not describe this issuer's actual exposure.\n- Disconfirming signal: Issuer segment disclosures or operating indicators contradict the hypothesized sensitivity.\n- Evidence label/confidence: sector_hypothesis / low\n#### Price versus model assumptions\n- Claim: Compare price-implied assumptions with disclosed operating performance and eligible peers.\n- Financial consequence: Growth, profitability, capital intensity and required returns affect equity value.\n- Counterargument: Peer dispersion and uncertain forecasts can produce a wide range; a price gap alone is not mispricing.\n- Disconfirming signal: Required growth or returns lack support from subsequent disclosures.\n- Evidence label/confidence: model_derived / review_required\n- Evidence: DCF bear: value differs from price by over 50% downside or 100% upside. Check growth/margin assumptions, timing, reinvestment, share units and omitted businesses. Do not force-fit to price.\n- Evidence: Peers ev_revenue: value differs from price by over 50% downside or 100% upside. Check growth/margin assumptions, timing, reinvestment, share units and omitted businesses. Do not force-fit to price.\n- Evidence: The range is a cross-method envelope, not a recommended target or a confidence interval. Compare peer growth and margins before treating a premium as overvaluation.\n- Evidence: Company revenue growth 17.8% versus eligible-peer median 13.5%; faster growth alone does not establish a justified premium.\n- Evidence: Company operating margin 46.8% versus eligible-peer median 25.3%; accounting, business mix and reinvestment still require review.\n\n### Key Debates\n\n| Debate | Consensus | Analyst view | Change signal | Catalyst |\n|---|---|---|---|---|\n| Retention | Verified consensus unavailable | Test issuer sensitivity to retention | New issuer disclosures for retention | 2027-01-27 |\n| seats or consumption | Verified consensus unavailable | Test issuer sensitivity to seats or consumption | New issuer disclosures for seats or consumption | 2027-01-27 |\n| pricing | Verified consensus unavailable | Test issuer sensitivity to pricing | New issuer disclosures for pricing | 2027-01-27 |"
+  },
+  {
+   "title": "Company & Business Model",
+   "chars": 3749,
+   "markdown": "## Company & Business Model\nMicrosoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft 365 Copilot, and Windows Commercial on-premises and Office licensed on-premises. This segment also provides Microsoft 365 Consumer products and cloud services; LinkedIn, including talent solutions, marketing solutions, subscriptions, and sales solutions; Dynamics 365, a set of cloud-based applications; and on-premises ERP and CRM applications. Its Intelligent Cloud segment offers server products and cloud services; cloud and AI consumption-based services, GitHub cloud services, health and life sciences cloud services, as well as virtual desktop offerings, and other cloud services; SQL Server, Windows Server, Visual Studio, System Center, and related client access licenses; and enterprise support services, industry solutions, Microsoft partner network, and learning experience. The company's More Personal Computing segment provides Windows OEM licensing and devices comprising Surface and PC accessories; XBOX hardware, and XBOX first- and third-party content and services; XBOX Game Pass and other subscriptions; XBOX Cloud Gaming, advertising, and other cloud services; and search advertising consisting of Bing, Copilot, Microsoft News, Microsoft Edge, and third-party affiliates. It sells its products through partners and retail networks. The company was founded in 1975 and is headquartered in Redmond, Washington.\n\n### Revenue Model\n- Sector framework to verify: Subscriptions, licences and related services\n\n### Cost Structure\n- Retention\n- seats or consumption\n- pricing\n- hosting and development costs\n\n### Capital Allocation\n- Latest annual share repurchases: 22,271,000,000.\n- Latest annual debt repayment: 3,000,000,000.\n- Latest annual capital expenditures: 115,948,000,000.\n\n### Operating Dependencies\n- Verify recurring revenue\n- Verify retention\n- Verify remaining obligations\n- Verify SBC\n- Verify sales efficiency\n\n### Conclusions\n- Industry framework: software. Sector economics are hypotheses until confirmed in issuer disclosures.\n- Reported segment mix, growth and capital allocation are shown separately from sector assumptions.\n- No competitive strength or geographic concentration is inferred solely from the industry label.\n\n### Business-Model Drivers\n\n| Driver | Direction | Mechanism | Financial link |\n|---|---|---|---|\n| Retention | issuer-dependent | Test issuer sensitivity to retention | Revenue, profitability and capital requirements |\n| seats or consumption | issuer-dependent | Test issuer sensitivity to seats or consumption | Revenue, profitability and capital requirements |\n| pricing | issuer-dependent | Test issuer sensitivity to pricing | Revenue, profitability and capital requirements |\n| hosting and development costs | issuer-dependent | Test issuer sensitivity to hosting and development costs | Revenue, profitability and capital requirements |\n\n### Segment Economics\n\n| Segment | Revenue | Share | Growth |\n|---|---:|---:|---:|\n| Productivity And Business Processes | $140.00B | 42.2% | 15.9% |\n| Intelligent Cloud | $137.79B | 41.5% | 29.7% |\n| More Personal Computing | $54.05B | 16.3% | -1.1% |"
+  },
+  {
+   "title": "Industry & Competitive Intelligence",
+   "chars": 3132,
+   "markdown": "## Industry & Competitive Intelligence\n- Peer set: ORCL, CRM, ADBE, NOW | Confidence: medium\n\n### Peer Benchmark\n\n| Peer | Role | Growth | Gross margin | Operating margin | Market cap | EV/Revenue |\n|---|---|---:|---:|---:|---:|---:|\n| ORCL | Potential industry comparator; business mix requires review | 17.3% | 65.8% | 30.6% | $348.09B | 7.15x |\n| CRM | Potential industry comparator; business mix requires review | 9.6% | 77.7% | 20.1% | $153.42B | 4.52x |\n| ADBE | Potential industry comparator; business mix requires review | 0.0% | 89.3% | 36.6% | $86.59B | 3.75x |\n| NOW | Potential industry comparator; business mix requires review | 20.9% | 77.5% | 13.7% | $92.20B | 7.37x |\n\n### Competitive Position\n- **Retention \u2014 None/5 (unassessed)**: Requires issuer evidence; no sector-based competitive rank assigned. Rivals: ORCL, CRM, ADBE, NOW.\n- **seats or consumption \u2014 None/5 (unassessed)**: Requires issuer evidence; no sector-based competitive rank assigned. Rivals: ORCL, CRM, ADBE, NOW.\n- **pricing \u2014 None/5 (unassessed)**: Requires issuer evidence; no sector-based competitive rank assigned. Rivals: ORCL, CRM, ADBE, NOW.\n- **hosting and development costs \u2014 None/5 (unassessed)**: Requires issuer evidence; no sector-based competitive rank assigned. Rivals: ORCL, CRM, ADBE, NOW.\n\n### Industry Drivers\n- **Retention (conditional, None/5):** Test effect on issuer revenue, costs and capital needs.\n- **seats or consumption (conditional, None/5):** Test effect on issuer revenue, costs and capital needs.\n- **pricing (conditional, None/5):** Test effect on issuer revenue, costs and capital needs.\n- **hosting and development costs (conditional, None/5):** Test effect on issuer revenue, costs and capital needs.\n\n### Porter's Five Forces\n- **Rivalry \u2014 unassessed (None/5):** Requires issuer-specific concentration, pricing and contractual evidence.\n- **Buyer power \u2014 unassessed (None/5):** Requires issuer-specific concentration, pricing and contractual evidence.\n- **Supplier power \u2014 unassessed (None/5):** Requires issuer-specific concentration, pricing and contractual evidence.\n- **Substitution \u2014 unassessed (None/5):** Requires issuer-specific concentration, pricing and contractual evidence.\n- **New entrants \u2014 unassessed (None/5):** Requires issuer-specific concentration, pricing and contractual evidence.\n\n### Vulnerabilities\n- Monitor recurring revenue\n- Monitor retention\n- Monitor remaining obligations\n- Monitor SBC\n- Monitor sales efficiency\n\n### Conclusions\n- Revenue multiples need growth/margin context. Keep stock compensation in operating expenses; do not add it back to FCFF.\n- 4 of 4 candidates match the reported subsector; at least three observations are required for each percentile.\n- Data note: Industry routing is a research framework, not verified issuer economics. International symbols depend on provider coverage; no implicit FX or ADR conversion.\n- Data note: No issuer moat, market share or competitor strength is asserted without supporting evidence.\n- Data note: Cross-currency size ranks withheld; ratios use the labelled annual or provider basis and require period comparability review."
+  },
+  {
+   "title": "Macro & Regulatory Analysis",
+   "chars": 1923,
+   "markdown": "## Macro & Regulatory Analysis\n- Confidence: medium\n\n### Macro Transmission\n\n| Factor | Direction | Sensitivity | Score | Transmission |\n|---|---|---|---:|---|\n| Demand and activity | conditional | unquantified | None/5 | Retention |\n| Financing conditions | conditional | unquantified | None/5 | Funding costs, discount rates and refinancing access |\n| Input costs and pricing | conditional | unquantified | None/5 | seats or consumption; pricing; hosting and development costs |\n\n### Regulatory and Geopolitical Exposure\n\n| Topic | Jurisdiction | Direction | Materiality | Mechanism |\n|---|---|---|---:|---|\n| software policy exposure | Verify issuer operating jurisdictions | conditional | None/5 | Privacy, security and competition rules affect operations |\n\n### Macro Scenarios\n- **Supportive (N/A)** \u2014 Test higher volumes or fee income against observed capacity and capital requirements.\n  - Conditions: Demand improves without offsetting cost or capital pressure\n  - Financial channels: Retention; seats or consumption; pricing; hosting and development costs\n- **Base (N/A)** \u2014 Update inputs from issuer disclosures; this is a conditional scenario, not a consensus forecast.\n  - Conditions: Operating conditions remain near the explicitly modelled assumptions\n  - Financial channels: Retention; seats or consumption; pricing; hosting and development costs\n- **Adverse (N/A)** \u2014 Test lower earnings, increased capital needs and reduced equity value.\n  - Conditions: Demand weakens or funding, input costs or policy become less favourable\n  - Financial channels: Retention; seats or consumption; pricing; hosting and development costs\n\n### Leading Indicators\n- recurring revenue\n- retention\n- remaining obligations\n- SBC\n- sales efficiency\n- Data note: Sector transmission hypotheses; no live macro series or verified policy update is implied.\n- Data note: Geographic exposures are not inferred from ticker or exchange."
+  },
+  {
+   "title": "Financial Statement Analysis",
+   "chars": 4435,
+   "markdown": "## Financial Statement Analysis\n- Revenue: $331.84B | Growth: 17.8%\n- Net income: $133.75B | Operating margin: 46.8% | FCF: $66.99B\n\n### Financial Data Reliability\n- Statement readiness: **REVIEW_REQUIRED**\n- Required statement-field completeness (not valuation readiness): 100.0% across 5 period(s)\n- Provenance-tagged fields: 199; cross-source conflicts: 33\n- Accounting checks: gross_profit_bridge=PASS; fcf_bridge=PASS; working_capital_bridge=PASS; current_ratio_bridge=PASS\n- Conflict: balance.Accounts Payable (2026-06-30) differed by 5.6%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Accounts Payable (2025-06-30) differed by 20.6%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Accounts Payable (2024-06-30) differed by 18.6%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Accounts Payable (2023-06-30) differed by 18.7%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Cash And Cash Equivalents (2026-06-30) differed by 72.7%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Cash And Cash Equivalents (2025-06-30) differed by 68.0%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Cash And Cash Equivalents (2024-06-30) differed by 75.8%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Cash And Cash Equivalents (2023-06-30) differed by 68.8%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Current Debt (2024-06-30) differed by 74.8%; SEC Company Facts retained; provider value logged as a conflict.\n- Conflict: balance.Long Term Debt (2026-06-30) differed by 34.7%; SEC Company Facts retained; provider value logged as a conflict.\n\n### Multi-Year Overview\n\n| Year | Revenue | Growth | Gross margin | Operating margin | EPS | OCF | CapEx | FCF |\n|---:|---:|---:|---:|---:|---:|---:|---:|---:|\n| 2022 | $198.27B | N/A | 68.4% | 42.1% | 9.65 | $89.03B | $23.89B | $65.15B |\n| 2023 | $211.91B | 6.9% | 68.9% | 41.8% | 9.68 | $87.58B | $28.11B | $59.48B |\n| 2024 | $245.12B | 15.7% | 69.8% | 44.6% | 11.8 | $118.55B | $44.48B | $74.07B |\n| 2025 | $281.72B | 14.9% | 68.8% | 45.6% | 13.64 | $136.16B | $64.55B | $71.61B |\n| 2026 | $331.84B | 17.8% | 67.9% | 46.8% | 17.95 | $182.94B | $115.95B | $66.99B |\n\n### Liquidity, Leverage & Capital Allocation\n- Current/quick ratios: 1.23x / 0.93x\n- Working capital: $38.88B; net debt: $-36.55B\n- Repurchases: $22.27B; debt repayment: $3.00B\n\n### Detected Trends\n- **Revenue (improving)** \u2014 Top-line growth is improving; latest annual change was +17.8%.\n- **Gross Margin (stable)** \u2014 Gross profitability is stable; latest annual change was -0.9%.\n- **R And D Percent Revenue (stable)** \u2014 R&d intensity is stable; latest annual change was -0.8%.\n- **Operating Margin (stable)** \u2014 Operating leverage is stable; latest annual change was +1.2%.\n- **Net Margin (improving)** \u2014 Net profitability is improving; latest annual change was +4.2%.\n- **Diluted Eps (improving)** \u2014 Per-share earnings is improving; latest annual change was +31.6%.\n- **Operating Cash Flow (improving)** \u2014 Cash generation is improving; latest annual change was +34.4%.\n- **Capital Expenditures (rising)** \u2014 Capital investment is rising; latest annual change was +79.6%.\n- **Free Cash Flow (stable)** \u2014 Discretionary cash generation is stable; latest annual change was -6.5%.\n- **Working Capital (worsening)** \u2014 Working-capital capacity is worsening; latest annual change was -22.1%.\n- **Current Ratio (stable)** \u2014 Near-term liquidity is stable; latest annual change was -12.3%.\n- **Debt To Assets (stable)** \u2014 Balance-sheet leverage is stable; latest annual change was -1.7%.\n- **Total Debt (stable)** \u2014 Absolute debt is stable; latest annual change was -6.6%.\n- **Share Repurchases (stable)** \u2014 Share repurchases is stable; latest annual change was +20.9%.\n- Data note: SEC Company Facts was prioritized; yfinance filled only missing audited cells.\n- Data note: 33 overlapping provider conflict(s) were resolved in favor of audited facts.\n- Audit note: SEC Company Facts was prioritized; yfinance filled only missing audited cells.\n- Audit note: 33 overlapping provider conflict(s) were resolved in favor of audited facts.\n- Audit note: 33 cross-source conflict(s) require review; audited SEC values were retained."
+  },
+  {
+   "title": "Valuation",
+   "chars": 1560,
+   "markdown": "## Valuation\n- Trailing/forward P/E: 26.29x / 20.81x\n- Price/Sales: 10.80x | EV/EBITDA: 18.69x\n- Methodology: Industry-selected peer quartiles, audited FCFF scenarios, reverse DCF and sourced segment SOTP; methods remain separate\n- Confidence: review_required\n- Range: $184.03 to $626.62\n\n### WACC\n- Calculated WACC: 9.3%\n- Cost of equity/debt: 9.5% / 5.5%\n\n### DCF Scenarios\n\n| Scenario | Growth | Target margin | WACC | Terminal growth | Value/share | Upside |\n|---|---:|---:|---:|---:|---:|---:|\n| Bear | 12.8% | 37.5% | 10.3% | 2.5% | $195.18 | -61.2% |\n| Base | 17.8% | 40.5% | 9.3% | 2.5% | $322.32 | -36.0% |\n| Bull | 22.8% | 43.5% | 8.3% | 2.5% | $541.97 | 7.6% |\n\n### DCF Sensitivity\n\n| WACC / Terminal growth | 1.5% | 2.0% | 2.5% | 3.0% | 3.5% |\n|---|---:|---:|---:|---:|---:|\n| 7.3% | $447.30 | $448.92 | $450.55 | $452.17 | $453.80 |\n| 8.3% | $375.37 | $376.68 | $377.98 | $379.28 | $380.58 |\n| 9.3% | $320.20 | $321.26 | $322.32 | $323.38 | $324.44 |\n| 10.3% | $276.80 | $277.67 | $278.54 | $279.42 | $280.29 |\n| 11.3% | $241.93 | $242.66 | $243.39 | $244.11 | $244.84 |\n\n### Relative Valuation\n\n| Peer | EV/Revenue | EV/EBITDA | P/E | P/S |\n|---|---:|---:|---:|---:|\n| ORCL | 7.15x | 16.11x | 20.37x | N/A |\n| CRM | 4.52x | 19.69x | 20.57x | N/A |\n| ADBE | 3.75x | 9.36x | 12.14x | N/A |\n| NOW | 7.37x | 38.19x | 52.74x | N/A |\n- Valuation note: Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify.\n- Valuation note: No mechanical blend of unlike methods. Industry peer sample is not the entire industry."
+  },
+  {
+   "title": "Risk",
+   "chars": 70,
+   "markdown": "## Risk\n- 1Y volatility: 33.9%\n- Maximum drawdown: -28.0%\n- Beta: 1.04x"
+  },
+  {
+   "title": "SEC Filing Analysis",
+   "chars": 10120,
+   "markdown": "## SEC Filing Analysis\n- SEC status: **OK**\n- CIK: 0000789019 (local CIK registry)\n### Latest 10-K\n- Filed: 2026-07-29\n- Report period: 2026-06-30\n- Fetch status: ok; document characters: 357,668\n- Source URL: https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm\n- Sections found: business, risk_factors, management_discussion\n#### Growth\n- Failure to do so could reduce adoption, market share, and revenue growth.\n- Microsoft 365 Commercial revenue is mainly affected by a combination of continued installed base growth and average revenue per user expansion, as well as the continued shift from Office licensed on-premises to Microsoft 365.\n- If we are not effective in executing organizational and technical changes to increase efficiency and accelerate innovation, or if we fail to generate sufficient usage of our new products and services, the timing or magnitude of any revenue growth may not be in line with these costs.\n#### Margins Profitability\n- Efforts to compete with competitors' content and application marketplaces may increase our cost of revenue and lower our operating margins.\n- Competing with operating systems licensed at low or no cost may decrease our PC operating system margins.\n- The cost of these measures to protect products and customer-facing services could reduce our operating margins.\n#### Capex Investment\n- These investments are being made at significant scale and on an accelerated timeline, require substantial and increasing capital expenditures and continued access to capital, and are in advance of fully developed revenue streams.\n- Intellectual Property We protect our intellectual property investments in a variety of ways.\n- Expanding manufacturing or supply capacity for certain components may require significant investments and multi-year lead times.\n#### Liquidity Debt\n- Our ability to fund these investments depends on our ability to generate sufficient cash flows and obtain financing on acceptable terms.\n- RIS K FACTORS Our operations and financial results are subject to various risks and uncertainties, including those described below, that could adversely affect our business, operations, financial condition, results of operations, liquidity, and the trading price of our common stock.\n#### Competition\n- AI technology and services are a highly competitive and rapidly evolving market, and new competitors continue to enter the market.\n- STRATEGIC AND COMPETITIVE RISKS We face intense competition across all markets for our products and services, which could adversely affect our results of operations.\n- Competition Competitors to Office include software and global application vendors, web-based and mobile application companies, AI-first application companies, as well as local application developers.\n#### Regulation\n- Changes in governmental policies, permitting processes, environmental regulations, sustainability requirements, building standards, energy regulations, or other factors beyond our control may delay projects, restrict development opportunities, impose additional compliance obligations, or increase costs.\n- GOVERNMENT REGULATION We are subject to a wide range of laws, regulations, and legal requirements in the U.S.\n- Our business teams, with legal support, manage the compliance programs and prepare external regulatory and commercial reporting, and our internal audit teams conduct reviews of the programs and processes.\n#### Supply Chain\n- Component shortages, excess or obsolete inventory, or price reductions resulting in inventory adjustments have and may increase our cost of revenue.\n- Malicious actors have and may continue to exploit the supply chain to compromise our systems by, for example, injecting malware, including through software updates or compromised supplier or open-source software code, accounts, or hardware.\n- Incidents involving the supply chain, including third-party vendors, suppliers, service providers, open-source software, or customer environments, may adversely affect our systems and our products and services, even where our own systems are not directly compromised.\n#### Demand\n- As we manage infrastructure capacity constraints and evolving customer demand, we may modify capacity allocations, deployment priorities, pricing, or other commercial arrangements.\n- If we are unable to secure adequate power resources on commercially reasonable terms, our ability to support customer demand and execute our growth strategy could be adversely affected.\n- Our cloud and AI strategy requires substantial investments and depends on evolving customer demand, technological developments, competitive dynamics, and regulatory conditions, any of which could adversely affect our business, financial condition, and results of operations.\n- Parser/fetch note: business: 38 heading candidate(s); selected section length 32903 chars.\n- Parser/fetch note: risk_factors: 21 heading candidate(s); selected section length 87285 chars.\n- Parser/fetch note: management_discussion: 19 heading candidate(s); selected section length 6690 chars.\n### Latest 10-Q\n- Filed: 2026-10-28\n- Report period: 2026-09-30\n- Fetch status: ok; document characters: 223,386\n- Source URL: https://www.sec.gov/Archives/edgar/data/789019/000119312526436133/msft-20260930.htm\n- Sections found: management_discussion, risk_factors\n#### Growth\n- Failure to do so could reduce adoption, market share, and revenue growth.\n- If we are not effective in executing organizational and technical changes to increase efficiency and accelerate innovation, or if we fail to generate sufficient usage of our new products and services, the timing or magnitude of any revenue growth may not be in line with these costs.\n- Efforts to compete with competitors' content and application marketplaces may increase our cost of revenue and lower our operating margins.\n#### Margins Profitability\n- The primary profitability measure used by the CODM to review segment operating results is operating income.\n- Efforts to compete with competitors' content and application marketplaces may increase our cost of revenue and lower our operating margins.\n- Cost of revenue is allocated in certain cases based on a relative revenue methodology.\n#### Capex Investment\n- These investments are being made at significant scale and on an accelerated timeline, require substantial and increasing capital expenditures and continued access to capital, and are in advance of fully developed revenue streams.\n- The fair values of these investments approximate their carrying values.\n- Our Level 2 investments include commercial paper, certificates of deposit, U.S.\n#### Liquidity Debt\n- 15 PART I Item 1 Foreign currency risks related to certain Euro-denominated debt are hedged using foreign exchange forward contracts that are designated as cash flow hedging instruments.\n- Credit-Risk-Related Contingent Features Certain counterparty agreements for derivative instruments contain provisions that require our issued and outstanding long-term unsecured debt to maintain an investment grade credit rating and require us to maintain minimum liquidity of $ 1.0 billion.\n- Interest is paid semi-annually, except for the Euro-denominated debt, which is paid annually.\n#### Competition\n- Some jurisdictions also allow competitors or consumers to assert claims of anti-competitive conduct.\n- AI technology and services are a highly competitive and rapidly evolving market, and new competitors continue to enter the market.\n- STRATEGIC AND COMPETITIVE RISKS We face intense competition across all markets for our products and services, which could adversely affect our results of operations.\n#### Regulation\n- Changes in governmental policies, permitting processes, environmental regulations, sustainability requirements, building standards, energy regulations, or other factors beyond our control may delay projects, restrict development opportunities, impose additional compliance obligations, or increase costs.\n- Examples include laws and regulations regarding: \u2022 Competition laws and new market regulation: Government agencies closely scrutinize us under U.S.\n- Governments are actively enforcing competition laws and regulations and enacting new regulations to intervene in digital markets, and this includes markets such as the EU, the United Kingdom, the U.S., and China.\n#### Supply Chain\n- Component shortages, excess or obsolete inventory, or price reductions resulting in inventory adjustments have and may increase our cost of revenue.\n- Malicious actors have and may continue to exploit the supply chain to compromise our systems by, for example, injecting malware, including through software updates or compromised supplier or open-source software code, accounts, or hardware.\n- Incidents involving the supply chain, including third-party vendors, suppliers, service providers, open-source software, or customer environments, may adversely affect our systems and our products and services, even where our own systems are not directly compromised.\n#### Demand\n- As we manage infrastructure capacity constraints and evolving customer demand, we may modify capacity allocations, deployment priorities, pricing, or other commercial arrangements.\n- If we are unable to secure adequate power resources on commercially reasonable terms, our ability to support customer demand and execute our growth strategy could be adversely affected.\n- Our cloud and AI strategy requires substantial investments and depends on evolving customer demand, technological developments, competitive dynamics, and regulatory conditions, any of which could adversely affect our business, financial condition, and results of operations.\n- Parser/fetch note: management_discussion: 19 heading candidate(s); selected section length 62027 chars.\n- Parser/fetch note: risk_factors: 18 heading candidate(s); selected section length 82186 chars.\n### Latest 8-K\n- Filed: 2026-11-05\n- Report period: 2026-11-04\n- Fetch status: metadata_only; document characters: 0\n- Source URL: https://www.sec.gov/Archives/edgar/data/789019/000119312526448357/d177209d8k.htm\n- Sections found: none"
+  },
+  {
+   "title": "Filing Changes",
+   "chars": 122,
+   "markdown": "## Filing Changes\n### 10-K: 2025-07-30 \u2192 2026-07-29\n- New themes: none\n### 10-Q: 2026-04-29 \u2192 2026-10-28\n- New themes: none"
+  },
+  {
+   "title": "Earnings & News",
+   "chars": 485,
+   "markdown": "## Earnings & News\n- Next earnings: 2027-01-27\n- 2027-01-27 16:00:00-05:00: estimate=4.86, reported=None, surprise=None\n- 2026-10-28 16:00:00-04:00: estimate=4.72, reported=4.89, surprise=3.59\n- 2026-07-29 16:00:00-04:00: estimate=4.24, reported=4.74, surprise=11.81\n- 2026-04-29 16:00:00-04:00: estimate=4.07, reported=4.27, surprise=4.85\n- 2026-01-28 16:00:00-05:00: estimate=3.92, reported=4.14, surprise=5.69\n- 2025-10-29 16:00:00-04:00: estimate=3.66, reported=4.13, surprise=12.73"
+  },
+  {
+   "title": "Thesis Monitoring & Falsification",
+   "chars": 4532,
+   "markdown": "## Thesis Monitoring & Falsification\n\n### Catalysts\n- Next earnings: 2027-01-27\n\n### Thesis-Linked Risks\n\n| Risk | Severity | Leading indicator | Downside mechanism |\n|---|---|---|---|\n| Price variability | moderate | Drawdowns, event dates and realized volatility | Losses can exceed historical VaR during discontinuous events |\n| Short-term liquidity | moderate | Cash, working capital and maturity disclosures | Funding pressure if cash conversion deteriorates |\n| Debt servicing | moderate | Interest coverage, debt maturities, rates | Refinancing costs reduce equity cash flow |\n| Cash generation | moderate | OCF versus capex, dilution and acquisitions | Persistent negative FCF may require financing |\n| growth | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| margins_profitability | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| capex_investment | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| liquidity_debt | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| competition | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| regulation | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| supply_chain | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| demand | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| growth | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| margins_profitability | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| capex_investment | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| liquidity_debt | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| competition | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| regulation | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| supply_chain | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| demand | unscored | Check changes in subsequent filings | Issuer disclosure; magnitude and probability not quantified |\n| DCF bear divergence | review | Model inputs, peer dispersion and price-implied growth | Forecast shortfall or multiple compression |\n| Peers ev_revenue divergence | review | Model inputs, peer dispersion and price-implied growth | Forecast shortfall or multiple compression |\n| Demand and activity | unscored | Changes in Demand and activity | Retention |\n| Financing conditions | unscored | Changes in Financing conditions | Funding costs, discount rates and refinancing access |\n| Input costs and pricing | unscored | Changes in Input costs and pricing | seats or consumption; pricing; hosting and development costs |\n| software policy exposure | unscored | ['recurring revenue', 'retention', 'remaining obligations', 'SBC', 'sales efficiency'] | Privacy, security and competition rules affect operations |\n\n### Explicit Falsifiers\n- New disclosures contradict model growth, margin or reinvestment assumptions.\n- Issuer segment disclosures or operating indicators contradict the hypothesized sensitivity.\n- Issuer segment disclosures or operating indicators contradict the hypothesized sensitivity.\n- Required growth or returns lack support from subsequent disclosures.\n\n### Open Evidence Requirements\n- Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify.\n- Validate sector hypotheses against issuer disclosures and independently reviewed peers.\n- Industry routing is a research framework, not verified issuer economics. International symbols depend on provider coverage; no implicit FX or ADR conversion.\n- No issuer moat, market share or competitor strength is asserted without supporting evidence.\n- Cross-currency size ranks withheld; ratios use the labelled annual or provider basis and require period comparability review."
+  },
+  {
+   "title": "Assumptions & Source Register",
+   "chars": 754,
+   "markdown": "## Assumptions & Source Register\n\n### Assumptions\n- DCF is an explicit conditional forecast, not a prediction calibrated to match the share price.\n- Provider quote and trailing fundamentals can have different update times; retrieval date is not a financial period.\n- All monetary inputs are full currency units. Current shares price the current equity claim; SBC remains an operating expense.\n- Peer quartiles measure observed dispersion, not a statistical confidence interval. No automatic target blend.\n- Industry templates select methods, not fixed valuation multiples; reviewed peers and segment inputs can be supplied per ticker.\n\n### Source Categories\n- SEC Company Facts primary + yfinance gap-fill\n- Provider market metadata\n- Linked news metadata"
+  },
+  {
+   "title": "System Diagnostics",
+   "chars": 3973,
+   "markdown": "## System Diagnostics\n- Overall status: **DEGRADED**\n- Healthy: 14; degraded: 7; failed: 0\n\n| Agent | Status | Summary |\n|---|---|---|\n| Financials | OK | 3/3 core values available. |\n| Deep Financials | OK | 5 normalized annual period(s). |\n- Deep Financials issue: SEC Company Facts was prioritized; yfinance filled only missing audited cells.\n- Deep Financials issue: 33 overlapping provider conflict(s) were resolved in favor of audited facts.\n| Financial Data Reliability | DEGRADED | review_required; completeness 100.0%. |\n- Financial Data Reliability issue: SEC Company Facts was prioritized; yfinance filled only missing audited cells.\n- Financial Data Reliability issue: 33 overlapping provider conflict(s) were resolved in favor of audited facts.\n- Financial Data Reliability issue: 33 cross-source conflict(s) require review; audited SEC values were retained.\n| Valuation | OK | 4/4 headline multiples available. |\n| Advanced Valuation | DEGRADED | 3 FCFF scenario(s); equity cash-flow model not_needed; valuation range available. |\n- Advanced Valuation issue: Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify.\n- Advanced Valuation issue: No mechanical blend of unlike methods. Industry peer sample is not the entire industry.\n| Industry / Competition | OK | 4 peers and 4 competitive dimensions. |\n- Industry / Competition issue: Industry routing is a research framework, not verified issuer economics. International symbols depend on provider coverage; no implicit FX or ADR conversion.\n- Industry / Competition issue: No issuer moat, market share or competitor strength is asserted without supporting evidence.\n- Industry / Competition issue: Cross-currency size ranks withheld; ratios use the labelled annual or provider basis and require period comparability review.\n| Macro / Regulatory | OK | 3 macro and 1 regulatory exposures. |\n- Macro / Regulatory issue: Sector transmission hypotheses; no live macro series or verified policy update is implied.\n- Macro / Regulatory issue: Geographic exposures are not inferred from ticker or exchange.\n| Company / Business | OK | 4 operating drivers and 3 reported segments. |\n| Risk | OK | 3/3 market-risk values available. |\n- Risk issue: Small 95% tail sample; VaR/CVaR can be unstable.\n| SEC Filings | OK | CIK 0000789019; 3 latest-form records; 16 evidence themes. |\n- SEC Filings issue: 10-K records found: 2\n- SEC Filings issue: 10-Q records found: 2\n- SEC Filings issue: 8-K records found: 1\n- SEC Filings issue: Body filings parsed with evidence: 4/4\n| Filing Changes | OK | 2 filing comparison(s). |\n| Earnings | OK | 8 earnings event(s). |\n| News / Catalysts | DEGRADED | 0 news item(s); 0 catalyst term(s). |\n- News / Catalysts issue: News unavailable: YFDataException\n| Investment Thesis | DEGRADED | 4 pillars; posture watchlist. |\n- Investment Thesis issue: Other claims (preferred/minority interests) default to zero unless explicitly supplied; verify.\n- Investment Thesis issue: Validate sector hypotheses against issuer disclosures and independently reviewed peers.\n- Investment Thesis issue: Industry routing is a research framework, not verified issuer economics. International symbols depend on provider coverage; no implicit FX or ADR conversion.\n- Investment Thesis issue: No issuer moat, market share or competitor strength is asserted without supporting evidence.\n- Investment Thesis issue: Cross-currency size ranks withheld; ratios use the labelled annual or provider basis and require period comparability review.\n| Insight Priority | OK | ready |\n| SWOT Analysis | DEGRADED | draft |\n| Dashboard Experience | OK | ready |\n| Portfolio & Position Tracking | DEGRADED | empty |\n| Catalyst/Event Scheduler & Alerts | OK | 2 stored events; local inbox |\n| Persistent Research Memory | OK | Snapshot persisted to SQLite |\n| Quantitative Portfolio Risk | DEGRADED | not_run |\n\n---\nAutomated research draft for analyst review. Not investment advice."
+  },
+  {
+   "title": "Ranked Research Priorities",
+   "chars": 17935
+  },
+  {
+   "title": "Evidence-linked SWOT",
+   "chars": 5386
+  },
+  {
+   "title": "Guided Dashboard Plan",
+   "chars": 5898
+  },
+  {
+   "title": "Portfolio & Position Tracking",
+   "chars": 820
+  },
+  {
+   "title": "Catalyst/Event Scheduler & Alerts",
+   "chars": 1184
+  },
+  {
+   "title": "Persistent Research Memory",
+   "chars": 416
+  },
+  {
+   "title": "Quantitative Portfolio Risk",
+   "chars": 228
+  },
+  {
+   "title": "Model readiness",
+   "chars": 31818
+  },
+  {
+   "title": "Industry specialist analysis",
+   "chars": 6467
+  },
+  {
+   "title": "Valuation inputs, industry models and market comparison",
+   "chars": 50087
+  },
+  {
+   "title": "Risk evidence and downside scenarios",
+   "chars": 49934
+  },
+  {
+   "title": "News context and catalyst checks",
+   "chars": 1269
+  }
+ ],
+ "reportSectionsNote": "First 13 sections include Markdown; later evidence-appendix sections list title and size only (full text in report.md)."
+}

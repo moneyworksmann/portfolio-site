@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+/* Tokens from DESIGN.md. Pages use these names, never raw values. */
+:root {
+  --white: #ffffff;
+  --night: #17181b;
+  --night-2: #202227;
+  --ink: #1c2a44;
+  --ink-soft: #5b6678;
+  --paper: #f2f0ea;
+  --paper-soft: #a3a6ad;
+  --line-dark: #2c2f36;
+  --line-light: #e6e4de;
+  --focus: #7aa0ff;
+  --pos: #4cc38a;
+  --neg: #ff7b7b;
+
+  --t-work: #7fd3e6;    --t-work-ink: #10222b;
+  --t-now: #f3d36b;     --t-now-ink: #2a2208;
+  --t-writing: #e9845c; --t-writing-ink: #2a120a;
+  --t-about: #c4dc6a;   --t-about-ink: #1d2508;
+  --t-resume: #1c2a44;  --t-resume-ink: #ffffff;
+  --t-demos: #8a3b56;   --t-demos-ink: #ffffff;
+  --t-linkedin: #c9b5ea; --t-linkedin-ink: #1f1630;
+  --t-contact: #a7744f; --t-contact-ink: #ffffff;
+
+  --font-sans: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, monospace;
+  color-scheme: light;
+}
+
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--white); color: var(--ink); font-family: var(--font-sans); font-size: 17px; line-height: 1.6; }
+.night { background: var(--night); color: var(--paper); color-scheme: dark; }
+.mono { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+a { color: inherit; }
+.prose-link { text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+.prose-link:hover { text-decoration-thickness: 2px; }
+
+.display { font-weight: 500; letter-spacing: -0.03em; line-height: 0.95; font-size: clamp(56px, 11vw, 112px); }
+.statement { font-weight: 500; letter-spacing: -0.015em; line-height: 1.12; font-size: clamp(30px, 4.2vw, 44px); }
+.h2 { font-weight: 500; letter-spacing: -0.015em; line-height: 1.2; font-size: 28px; }
+.h3 { font-weight: 600; line-height: 1.35; font-size: 20px; }
+.small { font-size: 14px; line-height: 1.45; }
+.label { font-size: 12px; line-height: 1.4; letter-spacing: 0.04em; }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; height: 44px; padding: 0 18px; border-radius: 10px; font-weight: 500; font-size: 15px; text-decoration: none; border: 1px solid currentColor; transition: background .15s, color .15s; }
+.btn-primary { background: var(--ink); color: var(--white); border-color: var(--ink); }
+.btn-primary:hover { background: var(--white); color: var(--ink); }
+.night .btn-primary { background: var(--paper); color: var(--night); border-color: var(--paper); }
+.night .btn-primary:hover { background: var(--night); color: var(--paper); }
+.btn-quiet { border-color: transparent; padding: 0 4px; }
+.btn-quiet:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+/* Faint grid lines on dark pages, kept away from the text column */
+.grid-lines { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.grid-lines i { position: absolute; background: var(--line-dark); }
+
+/* Tile menu */
+dialog.menu { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: var(--white); }
+dialog.menu::backdrop { background: transparent; }
+.tiles { display: grid; gap: 6px; height: 100%; padding: 6px;
+  grid-template-columns: repeat(12, 1fr); grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "work work work work work now now now now now now now"
+    "work work work work work writing writing writing writing demos demos demos"
+    "about about about about mark writing writing writing writing demos demos demos"
+    "about about about about resume resume resume resume resume linkedin linkedin linkedin"
+    "contact contact contact contact resume resume resume resume resume linkedin linkedin linkedin"
+    "contact contact contact contact close close close close close close close close"; }
+.tile { position: relative; display: flex; flex-direction: column; justify-content: space-between; padding: 16px 18px; text-decoration: none; font-size: clamp(20px, 2.4vw, 32px); font-weight: 500; letter-spacing: -0.015em; transition: filter .15s; min-height: 72px; }
+.tile:hover { filter: brightness(1.04) saturate(1.05); }
+.tile small { font-family: var(--font-mono); font-size: 13px; letter-spacing: 0; font-weight: 400; opacity: .85; }
+@media (max-width: 720px) {
+  .tiles { grid-template-columns: 1fr 1fr; grid-template-rows: none; grid-auto-rows: minmax(96px, auto); overflow-y: auto;
+    grid-template-areas: "work work" "now writing" "demos about" "resume linkedin" "contact mark" "close close"; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  ::view-transition-old(root), ::view-transition-new(root) { animation-duration: .25s; }
+}
+
+/* Blog post body on dark */
+.post { max-width: 68ch; }
+.post h2 { font-size: 24px; font-weight: 500; letter-spacing: -0.01em; margin: 2.2em 0 .6em; }
+.post h3 { font-size: 19px; font-weight: 600; margin: 1.8em 0 .5em; }
+.post p, .post ul, .post ol { margin: 0 0 1.1em; }
+.post ul { list-style: disc; padding-left: 1.3em; } .post ol { list-style: decimal; padding-left: 1.3em; }
+.post li { margin: .3em 0; }
+.post a { text-decoration: underline; text-underline-offset: 3px; color: var(--paper); }
+.post strong { font-weight: 600; }
+.post table { width: 100%; border-collapse: collapse; font-size: 15px; margin: 1.5em 0; display: block; overflow-x: auto; }
+.post th, .post td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line-dark); white-space: nowrap; }
+.post blockquote { border-left: 2px solid var(--paper-soft); padding-left: 1em; color: var(--paper-soft); }
+.post hr { border: 0; border-top: 1px solid var(--line-dark); margin: 2em 0; }
+.post code { font-family: var(--font-mono); font-size: .9em; }
